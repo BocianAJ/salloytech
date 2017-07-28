@@ -1,0 +1,145 @@
+/* Spis Treści */
+
+/* 0.0 Resetowanie styli */
+/* 1.0 Style Ogólne */
+	/* 1.1 Typografia */
+	/* 1.2 Style wielorazowego użytku */
+		/* 1.2.1 Grid */
+/* 2.0 Menu główne */
+/* 3.0 Heder główny */
+/* 4.0 Sekcje */
+	/* 4.1 Sekcja "O firmie" */
+	/* 4.2 Sekcja "Oferta" */
+	/* 4.3 Sekcja "Galeria" */
+/* 5.0 Stopka - Kontakt */
+
+
+/* 0.0 Resetowanie styli */
+	body, main, nav, a, header, h1, h2, h3, h4 ,h5, h6, section, div, p, ul, li, img, footer {
+		box-sizing:border-box;
+		padding-left:0;
+		padding-right:0;
+		margin-left:0;
+		margin-right:0;
+		color:#030303;
+		text-decoration:none;
+		border:none;
+	}
+/* 1.0 Style Ogólne */
+	body{
+		background-color:#fff;
+	}
+	img {
+		max-width:100%;
+	}
+	.tlo-opakowanie {
+		max-width:1907px;
+		margin:0 auto;
+	}
+	button {
+		border:1px solid #888788;
+		background-color:#fff;
+		border-radius:1em;
+	}
+	button img {
+		
+	}
+	/* 1.1 Typografia */
+	@font-face {
+		font-family:"Roboto Regular";
+		src:url(./fonty/roboto-regular.ttf);
+	}
+	@font-face {
+		font-family:"Exo Bold";
+		src:url(./fonty/exo-bold.ttf);
+	}
+	body{
+		font-family:"Roboto Regular";
+		font-size:20px;
+	}
+	h1 {
+		font-size:1.8em;
+	}
+	h2 {
+		font-size:1.3em;
+		text-transform:uppercase;
+		display:block;
+		max-width:1200px;
+		margin:0 auto;
+	}
+	h3, h5, strong {
+		font-size:1.2em;
+	}
+	h4 {
+		font-size:1.1em;
+		float:right;
+		width:60%;
+		margin-left:6%;
+	}
+	h1, h2, nav {
+		font-family:"Exo Bold";
+	}
+	h2, h3, h5, strong {
+		color:#36559d;
+	}
+	/* 1.2 Style wielorazowego użytku */
+	.tresci {
+		display:block;
+		max-width:1200px;
+		margin:0 auto;	
+		}
+	.ikona {
+		display:block;
+		margin:2em auto;
+		width:auto;
+		height:10em;
+	}
+	.niebieski {
+		color:#36559d;
+	}
+	.szary {
+		color:#888788;
+	}
+		/* 1.2.1 Grid */
+			.kol {
+				width:20%;
+				float:left;
+			}
+			.kol2 {
+				width:40%;
+				float:left;
+			}
+			.kol2-prawa {
+				width:40%;
+				float:left;
+				margin-left:4%;
+			}
+			.float-clear {
+				clear: both;
+			}
+			.float-clearfix:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+/* 2.0 Menu główne */
+	.logo {
+		float:left;
+	}
+	nav {
+		float:right;
+	}
+	nav a {
+		text-transform:uppercase;
+		color:#888788;
+	}
+	nav a:hover, nav a:focus, nav a:active {
+		color:#36559d;
+	}
+/* 3.0 Heder główny */
+/* 4.0 Sekcje */
+	/* 4.1 Sekcja "O firmie" */
+
+	/* 4.2 Sekcja "Oferta" */
+	/* 4.3 Sekcja "Galeria" */
+/* 5.0 Stopka - Kontakt */
