@@ -139,7 +139,13 @@
 /* 3.0 Heder główny */
 /* 4.0 Sekcje */
 	/* 4.1 Sekcja "O firmie" */
-
+	.atuty .kol2 {
+		width:33%;
+	}
+	.atuty .kol2-prawa {
+		width:66%;
+		margin-left:6.6%;
+	}
 	/* 4.2 Sekcja "Oferta" */
 	/* 4.3 Sekcja "Galeria" */
 /* 5.0 Stopka - Kontakt */
