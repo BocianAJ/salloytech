@@ -151,6 +151,10 @@
 	nav a:hover, nav a:focus, nav a:active {
 		color:#36559d;
 	}
+	nav a:hover:after, nav a:focus:after, nav a:active:after {
+		content:"";
+		display:block;
+	}
 /* 3.0 Header główny */
 	main {
 		position:relative;
@@ -194,3 +198,31 @@
 		height:auto;
 	}
 /* 5.0 Stopka - Kontakt */
+	#kontakt {
+		background-image:url("./grafika/logo-znak.svg");
+		background-repeat:no-repeat;
+		background-position:bottom right;
+		background-size: auto 60%;
+		padding-top:1em;
+		padding-bottom:3em;
+	}
+	#kontakt p {
+		padding:0.3em 0 0.3em 4em;
+		line-height:1.5em;
+	}
+	.adres, .dane-kontakt {
+		position:relative;
+		margin-top:0.5em;
+	}
+	.adres:before, .dane-kontakt:before {
+		display:block;
+		float:left;
+		left:0;
+		position:absolute;
+	}
+	.adres:before {
+		content:url("./grafika/adres.svg");
+	}
+	.dane-kontakt:before {
+		content:url("./grafika/kontakt.svg");
+	}
