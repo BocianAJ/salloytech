@@ -39,6 +39,7 @@
 		border:1px solid #888788;
 		background-color:#fff;
 		border-radius:1em;
+		cursor:pointer;
 	}
 	button img {
 		
@@ -147,13 +148,21 @@
 		color:#888788;
 		margin:1em 0 1em 1em;
 		display:inline-block;
+		position:relative;
 	}
 	nav a:hover, nav a:focus, nav a:active {
 		color:#36559d;
 	}
 	nav a:hover:after, nav a:focus:after, nav a:active:after {
 		content:"";
+		background-color:#36559d;
 		display:block;
+		width:1em;
+		height:0.2em;
+		margin:0 auto;
+		position:absolute;
+		left:0;
+		right:0;
 	}
 /* 3.0 Header główny */
 	main {
@@ -193,9 +202,43 @@
 		padding-right:0;
 		margin:0;
 	}
-	#galeria img {
-		width:100%;
-		height:auto;
+	.slider {
+		position:relative;
+		background-color:#fff;
+		height:85vh;
+		max-height:485px;
+	}
+	.img-slide {
+		position: absolute;
+		margin: 0 auto;
+		width: auto;
+		left: 0;
+		right: 0;
+		height:100%;
+	}
+	.next-slide {
+	}
+	.previous-slide{
+		
+	}
+	.slider-btn {
+		position: absolute;
+		padding: 0.5em;
+		margin: 1em;
+		width: 4em;
+		height: 4em;
+		line-height: 1em;
+		border-radius: 2em;
+		border:none;
+		box-shadow:0 1px 2px grey;
+		bottom:45%;
+		bottom: calc(50% - 2em);
+	}
+	.prawy-btn {
+		right:0;
+	}
+	.lewy-btn {
+		left:0;
 	}
 /* 5.0 Stopka - Kontakt */
 	#kontakt {
