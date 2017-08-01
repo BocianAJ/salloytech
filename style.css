@@ -95,9 +95,6 @@
 		padding-left:2vw;
 		padding-right:2vw;
 	}
-	h3 {
-		padding-top:0;
-	}
 	h3, h5, strong {
 		font-size:1.2em;
 	}
@@ -111,7 +108,7 @@
 		color:#36559d;
 	}
 	p {
-		padding:0 0 1em 0;
+		padding:0.5em 0;
 	}
 	/* 1.2 Style wielorazowego użytku */
 	.tresc {
@@ -172,8 +169,7 @@
 		align-items: center;
 	}
 	.logo {
-		height:3em;
-		margin: 0.2em 0;
+		height:5vh;
 		display: block;
 	}
 	nav {
@@ -184,7 +180,7 @@
 		text-transform:uppercase;
 		color:#888788;
 		line-height: 1em;
-		margin:1em 0 1em 1em;
+		margin:1vh 0 1vh 1em;
 		display:inline-block;
 		position:relative;
 	}
@@ -205,8 +201,7 @@
 /* 3.0 Header główny */
 	.main {
 		position:relative;
-		margin-top:4.4em;
-		margin-top:calc(3.2em + 2vh);
+		margin-top:7vh;
 	}
 	.header-baner {
 		position:relative;
@@ -246,21 +241,28 @@
 	.slider {
 		position:relative;
 		background-color:#fff;
-		height:85vh;
 		max-height:485px;
+		overflow: hidden;
+	}
+	.current-img-slide {
+		position: relative;
+		width: 100%;
+		height:auto;
 	}
 	.img-slide {
 		position: absolute;
 		margin: 0 auto;
-		width: auto;
+		width: 100%;
+		height:auto;
+		top:0;
 		left: 0;
 		right: 0;
-		height:100%;
 	}
 	.next-slide {
+		transform:translteX(100%);
 	}
 	.previous-slide{
-		
+		transform:translteX(-100%);
 	}
 	.slider-btn {
 		position: absolute;
@@ -271,9 +273,14 @@
 		line-height: 1em;
 		border-radius: 2em;
 		border:none;
-		box-shadow:0 1px 2px grey;
+		box-shadow:0 1px 1px #888788;
 		bottom:45%;
 		bottom: calc(50% - 2em);
+		transition:box-shadow 0.5s;
+	}
+	.slider-btn:hover, .slider-btn:focus, .slider-btn:active {
+		box-shadow:0 2px 4px #888788;
+		transition:box-shadow 0.5s;
 	}
 	.prawy-btn {
 		right:0;
