@@ -57,7 +57,27 @@
 		font-family:"Roboto Regular";
 		font-size:20px;
 	}
-	h1, h2, h3, h4, h5, h6, p, ul, li  {
+	@media (max-width:1200px) {
+		body {
+			font-size:18px;
+		}
+	}
+	@media (max-width:1000px) {
+		body {
+			font-size:16px;
+		}
+	}
+	@media (max-width:800px) {
+		body {
+			font-size:14px;
+		}
+	}
+	@media (max-width:600px) {
+		body {
+			font-size:12px;
+		}
+	}
+	h1, h2, h3, h4, h5, h6, ul, li  {
 		padding:1em 0;
 	}
 	main > section {
@@ -72,8 +92,11 @@
 		margin:0 auto;
 		display:block;
 		max-width:1200px;
-		padding-left:1vw;
-		padding-right:1vw;
+		padding-left:2vw;
+		padding-right:2vw;
+	}
+	h3 {
+		padding-top:0;
 	}
 	h3, h5, strong {
 		font-size:1.2em;
@@ -87,23 +110,23 @@
 	h2, h3, h5, strong {
 		color:#36559d;
 	}
+	p {
+		padding:0 0 1em 0;
+	}
 	/* 1.2 Style wielorazowego użytku */
 	.tresc {
 		margin:0 auto;
 		max-width:1200px;
-		padding:1vh 1vw;
-		}
+		padding:1vh 2vw;
+	}
+	section div.tresc {
+		padding:0 2vw;
+	}
 	.ikona {
-		margin: 1.2em auto;
+		margin: 5% 5% 5% auto;
 		width: auto;
 		height: 5em;
 		display: block;
-	}
-	.niebieski {
-		color:#36559d;
-	}
-	.szary {
-		color:#888788;
 	}
 		/* 1.2.1 Grid */
 			.kol {
@@ -115,7 +138,8 @@
 				float:left;
 			}
 			.tresc .kol {
-				width:36%;
+				width:40%;
+				padding-right:5%;
 			}
 			.tresc .kol2 {
 				width:60%;
@@ -134,18 +158,32 @@
 			}
 /* 2.0 Menu główne */
 	.header-nav {
-		padding-top:1.2em;
-		padding-bottom:1em;
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color:#fff;
+		box-shadow:0 1px 0.25em #888788;
+	}
+	.header-nav .tresc {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.logo {
 		height:3em;
+		margin: 0.2em 0;
+		display: block;
 	}
 	nav {
 		text-align:right;
+		margin: 0.1em 0;
 	}
 	nav a {
 		text-transform:uppercase;
 		color:#888788;
+		line-height: 1em;
 		margin:1em 0 1em 1em;
 		display:inline-block;
 		position:relative;
@@ -158,15 +196,17 @@
 		background-color:#36559d;
 		display:block;
 		width:1em;
-		height:0.2em;
+		height:0.1em;
 		margin:0 auto;
 		position:absolute;
 		left:0;
 		right:0;
 	}
 /* 3.0 Header główny */
-	main {
+	.main {
 		position:relative;
+		margin-top:4.4em;
+		margin-top:calc(3.2em + 2vh);
 	}
 	.header-baner {
 		position:relative;
@@ -186,16 +226,17 @@
 	}
 /* 4.0 Sekcje */
 	/* 4.1 Sekcja "O firmie" */
-	#o-firmie img.kol2 {
-		position:absolute;
-		left:0;
-		z-index:-1;
-	}
 	.atuty h4.kol2-prawa {
 		width:56%;
 		float:right;
 	}
 	/* 4.2 Sekcja "Oferta" */
+	#oferta .kol2 {
+		padding-right:5%;
+	}
+	#oferta .kol-prawa {
+		padding:0;
+	}
 	/* 4.3 Sekcja "Galeria" */
 	#galeria h2 {
 		padding-left:0;
@@ -262,10 +303,13 @@
 		float:left;
 		left:0;
 		position:absolute;
+		height:2em;
 	}
 	.adres:before {
 		content:url("./grafika/adres.svg");
+		width:3em;
 	}
 	.dane-kontakt:before {
 		content:url("./grafika/kontakt.svg");
+		width:3em;
 	}
