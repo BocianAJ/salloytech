@@ -169,7 +169,7 @@
 		align-items: center;
 	}
 	.logo {
-		height:5vh;
+		height:6vh;
 		display: block;
 	}
 	nav {
@@ -201,7 +201,7 @@
 /* 3.0 Header główny */
 	.main {
 		position:relative;
-		margin-top:7vh;
+		margin-top:8vh;
 	}
 	.header-baner {
 		position:relative;
