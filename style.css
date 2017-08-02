@@ -241,13 +241,13 @@
 	.slider {
 		position:relative;
 		background-color:#fff;
-		max-height:485px;
 		overflow: hidden;
 	}
 	.current-img-slide {
 		position: relative;
 		width: 100%;
 		height:auto;
+		transition:transform 1s;
 	}
 	.img-slide {
 		position: absolute;
@@ -259,15 +259,17 @@
 		right: 0;
 	}
 	.next-slide {
-		transform:translteX(100%);
+		transform:translateX(100%);
+		transition:transform 1s;
 	}
 	.previous-slide{
-		transform:translteX(-100%);
+		transform:translateX(-100%);
+		transition:transform 1s;
 	}
 	.slider-btn {
 		position: absolute;
 		padding: 0.5em;
-		margin: 1em;
+		margin: 0.5em;
 		width: 4em;
 		height: 4em;
 		line-height: 1em;
@@ -276,11 +278,9 @@
 		box-shadow:0 1px 1px #888788;
 		bottom:45%;
 		bottom: calc(50% - 2em);
-		transition:box-shadow 0.5s;
 	}
 	.slider-btn:hover, .slider-btn:focus, .slider-btn:active {
 		box-shadow:0 2px 4px #888788;
-		transition:box-shadow 0.5s;
 	}
 	.prawy-btn {
 		right:0;
