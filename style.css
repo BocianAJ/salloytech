@@ -207,6 +207,20 @@
 			width:auto;
 		}
 	}
+	@media (max-width:600px) {
+		nav {
+			display:none;
+		}
+	}
+	@media (max-height:800px) {
+		.logo {
+			height:3em;
+		}
+		nav a {
+			font-size:1em;
+			margin:1em 0 1em 1em;
+		}
+	}
 /* 3.0 Header główny */
 	.main {
 		position:relative;
@@ -229,6 +243,33 @@
 	}
 	.podtytul {
 		font-size:1.2em;
+	}
+	@media (max-width:551px) {
+		.img-baner {
+			position:relative;
+		}
+		.header-baner {
+			position:absolute;
+			top:0;
+			height:80vw;
+			max-width: 300px;
+		}
+		.header-baner .kol2 {
+			width:100%;
+		}
+	}
+	@media (max-width:300px) {
+		.header-baner {
+			position:relative;
+			height:auto;
+			color:#030303;
+		}
+	}
+	@media (max-height:800px) {
+		.main {
+			margin-top:3em;
+			margin-top:calc(3em + 2vh);
+		}
 	}
 /* 4.0 Sekcje */
 	/* 4.1 Sekcja "O firmie" */

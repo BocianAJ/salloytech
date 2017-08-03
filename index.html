@@ -12,7 +12,7 @@
 <div class="tlo-opakowanie">
 	<header class="header-nav">
 		<div class="tresc float-clearfix">
-			<a href="#" class="kol"><img src="./grafika/logo.svg" class="logo" alt="SalloyTech logo"/></a>
+			<a href="#" class="kol"><picture><img src="./grafika/logo.svg" class="logo" alt="SalloyTech logo"/></picture></a>
 			<nav class="kol2 kol-prawa">
 				<a href="#o-firmie">O firmie</a>
 				<a href="#oferta">Oferta</a>
@@ -22,17 +22,23 @@
 		</div>
 	</header>
 	<section class="float-clear main">
+		<picture>
+			<source media="(max-width:550px)" srcset="./grafika/mobile/header-mobile.jpg">
+			<img class="img-baner" src="./grafika/header.jpg" alt=""/>
+		</picture>
 		<header class="header-baner tresc float-clearfix">
 			<div class="kol2">
 				<h1>Dostarczamy rozwiązania technologiczne dla przemysłu lotniczego.</h1>
 				<p class="podtytul">Zajmujemy się głównie obróbką materiałów trudno-obrabialnych procesami specjalnymi i metodami niekonwencjonalnymi jak również wytwarzaniem CNC.</p>
 			</div>			
 		</header>
-		<img class="img-baner" src="./grafika/header.jpg" alt=""/>
 		<section id="o-firmie">
 			<h2>O firmie</h2>
 			<section class="float-clearfix">
-				<img class="kol2" src="./grafika/img1.jpg" alt=""/>
+				<picture>
+					<source media="(max-width:600px)" srcset="./grafika/mobile/img1-mobile.jpg">
+					<img class="kol2" src="./grafika/img1.jpg" alt=""/>
+				</picture>
 				<div class="tresc float-clearfix">
 					<div class="kol2 kol-prawa float-clearfix">
 						<h3>Spółka Salloytech Sp. z o.o. powstała w 2014 roku i funkcjonuje w branży lotniczej.</h3>
