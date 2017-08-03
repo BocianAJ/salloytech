@@ -36,13 +36,16 @@
 		margin:0 auto;
 	}
 	button {
-		border:1px solid #888788;
-		background-color:#fff;
-		border-radius:1em;
 		cursor:pointer;
 	}
-	button img {
-		
+	a {
+		color:#888788;
+	}
+	a:hover, a:focus, a:active {
+		color:#36559d;
+	}
+	.main > section {
+		padding-top:8vh;
 	}
 	/* 1.1 Typografia */
 	@font-face {
@@ -77,7 +80,7 @@
 			font-size:12px;
 		}
 	}
-	h1, h2, h3, h4, h5, h6, ul, li  {
+	h2, h3, h4, h5, h6, ul, li  {
 		padding:1em 0;
 	}
 	main > section {
@@ -85,6 +88,7 @@
 	}
 	h1 {
 		font-size:1.8em;
+		padding-bottom: 1em;
 	}
 	h2 {
 		font-size:1.3em;	
@@ -135,8 +139,7 @@
 				float:left;
 			}
 			.tresc .kol {
-				width:40%;
-				padding-right:5%;
+				width:33%;
 			}
 			.tresc .kol2 {
 				width:60%;
@@ -160,7 +163,7 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color:#fff;
+		background-color:rgba(255,255,255, 0.99);
 		box-shadow:0 1px 0.25em #888788;
 	}
 	.header-nav .tresc {
@@ -175,12 +178,13 @@
 	nav {
 		text-align:right;
 		margin: 0.1em 0;
+		order: 1; /* korekta do float-clearfix dla flexa */
 	}
 	nav a {
 		text-transform:uppercase;
-		color:#888788;
+		font-size: 2vh;
 		line-height: 1em;
-		margin:1vh 0 1vh 1em;
+		margin:2vh 0 2vh 1em;
 		display:inline-block;
 		position:relative;
 	}
@@ -198,12 +202,19 @@
 		left:0;
 		right:0;
 	}
+	@media (max-width:800px) {
+		.header-nav .tresc .kol, .header-nav .tresc .kol2 {
+			width:auto;
+		}
+	}
 /* 3.0 Header główny */
 	.main {
 		position:relative;
 		margin-top:8vh;
 	}
 	.header-baner {
+		display:flex;
+		align-items:center;
 		position:relative;
 		color:#fff;
 		height: 40vw;
@@ -221,6 +232,9 @@
 	}
 /* 4.0 Sekcje */
 	/* 4.1 Sekcja "O firmie" */
+	section.atuty {
+		margin-top:3vh;
+	}
 	.atuty h4.kol2-prawa {
 		width:56%;
 		float:right;
@@ -242,6 +256,8 @@
 		position:relative;
 		background-color:#fff;
 		overflow: hidden;
+		margin:1em 0;
+		padding:0 4em;
 	}
 	.current-img-slide {
 		position: relative;
@@ -251,7 +267,7 @@
 	}
 	.img-slide {
 		position: absolute;
-		margin: 0 auto;
+		padding:0 4em;
 		width: 100%;
 		height:auto;
 		top:0;
@@ -270,12 +286,13 @@
 		position: absolute;
 		padding: 0.5em;
 		margin: 0.5em;
-		width: 4em;
-		height: 4em;
-		line-height: 1em;
+		font-size:1em;
+		width: 3em;
+		height: 3em;
+		background-color:#fff;
 		border-radius: 2em;
 		border:none;
-		box-shadow:0 1px 1px #888788;
+		box-shadow:0 1px 0.15em #888788;
 		bottom:45%;
 		bottom: calc(50% - 2em);
 	}
@@ -293,9 +310,9 @@
 		background-image:url("./grafika/logo-znak.svg");
 		background-repeat:no-repeat;
 		background-position:bottom right;
-		background-size: auto 60%;
+		background-size: auto 70%;
 		padding-top:1em;
-		padding-bottom:3em;
+		padding-bottom:18vh;
 	}
 	#kontakt p {
 		padding:0.3em 0 0.3em 4em;
@@ -304,6 +321,7 @@
 	.adres, .dane-kontakt {
 		position:relative;
 		margin-top:0.5em;
+		padding-right:1em;
 	}
 	.adres:before, .dane-kontakt:before {
 		display:block;
