@@ -6,6 +6,7 @@
 	/* 1.2 Style wielorazowego użytku */
 		/* 1.2.1 Grid */
 /* 2.0 Menu główne */
+	/* 2.1 Menu mobilne */
 /* 3.0 Header główny */
 /* 4.0 Sekcje */
 	/* 4.1 Sekcja "O firmie" */
@@ -45,7 +46,12 @@
 		color:#36559d;
 	}
 	.main > section {
-		padding-top:8vh;
+		padding-top:2vh;
+	}
+	@media (max-height:800px) {
+		.main > section {
+			padding-top:3em;
+		}
 	}
 	/* 1.1 Typografia */
 	@font-face {
@@ -156,6 +162,20 @@
 				display: table;
 				clear: both;
 			}
+			@media (max-width:550px) {
+				.kol2 {
+					width:100%;
+				}
+				.tresc .kol2 {
+					width:100%;
+				}
+				img.kol2{
+					padding:2vw;
+				}
+				.kol-prawa {
+					padding:0;
+				}
+			}
 /* 2.0 Menu główne */
 	.header-nav {
 		position: fixed;
@@ -177,7 +197,6 @@
 	}
 	nav {
 		text-align:right;
-		margin: 0.1em 0;
 		order: 1; /* korekta do float-clearfix dla flexa */
 	}
 	nav a {
@@ -191,16 +210,22 @@
 	nav a:hover, nav a:focus, nav a:active {
 		color:#36559d;
 	}
-	nav a:hover:after, nav a:focus:after, nav a:active:after {
+	nav a:after, nav a:after, nav a:after {
 		content:"";
-		background-color:#36559d;
-		display:block;
-		width:1em;
-		height:0.1em;
-		margin:0 auto;
+		background-color:#36559d;		
+		display:inline-block;
+		width:0;
+		height:0.15em;
 		position:absolute;
 		left:0;
 		right:0;
+		margin:0 auto;
+		bottom: -0.2em;
+		transition:width 0.5s;
+	}
+	nav a:hover:after, nav a:focus:after, nav a:active:after {
+		width:1em;
+		transition:width 0.5s;
 	}
 	@media (max-width:800px) {
 		.header-nav .tresc .kol, .header-nav .tresc .kol2 {
@@ -221,6 +246,19 @@
 			margin:1em 0 1em 1em;
 		}
 	}
+	/* 2.1 Menu mobilne */
+		.mobile-menu {
+			display:none;
+		}
+		@media (max-width:800px){
+			.mobile-menu {
+				display: inline-block;
+				float: right;
+				order: 1;
+				border: none;
+				background: #fff;
+			}
+		}
 /* 3.0 Header główny */
 	.main {
 		position:relative;
@@ -230,13 +268,14 @@
 		display:flex;
 		align-items:center;
 		position:relative;
+		top: 2vh;
 		color:#fff;
 		height: 40vw;
 		max-height: 769px;
 	}
 	.img-baner {
 		position:absolute;
-		top:0;
+		top:2vh;
 		left:0;
 		right:0;
 		z-index:-1;
@@ -250,7 +289,7 @@
 		}
 		.header-baner {
 			position:absolute;
-			top:0;
+			top:2vh;
 			height:80vw;
 			max-width: 300px;
 		}
@@ -268,7 +307,6 @@
 	@media (max-height:800px) {
 		.main {
 			margin-top:3em;
-			margin-top:calc(3em + 2vh);
 		}
 	}
 /* 4.0 Sekcje */
@@ -280,12 +318,39 @@
 		width:56%;
 		float:right;
 	}
+	@media (max-width:550px) {
+		.atuty h4 {
+			padding-bottom:2em;
+		}
+		.atuty div.kol2 {
+			width:60%;
+		}
+		.ikona {
+			margin:2vw auto 0;
+		}
+	}
+	@media (max-width:230px) {
+		.atuty div.kol2, .tresc .kol {
+			width:100%;
+		}
+		.atuty div.kol2 {
+			padding-bottom: 10%;	
+		}
+	}
 	/* 4.2 Sekcja "Oferta" */
 	#oferta .kol2 {
 		padding-right:5%;
 	}
 	#oferta .kol-prawa {
 		padding:0;
+	}
+	@media (max-width:550px) {
+		#oferta .kol2 {
+			padding:0;
+		}
+		#oferta img.kol2 {
+			padding:5% 2vw 0;
+		}
 	}
 	/* 4.3 Sekcja "Galeria" */
 	#galeria h2 {
@@ -346,6 +411,25 @@
 	.lewy-btn {
 		left:0;
 	}
+	@media (max-width:550px) {
+		.slider-btn {
+			bottom:0;
+		}
+		.prawy-btn {
+			right:25%;
+			right:calc(50% - 5em);
+		}
+		.lewy-btn {
+			left:25%;
+			left:calc(50% - 5em);
+		}
+		.slider {
+			padding: 0 0 5em 0;
+		}
+		.img-slide {
+			padding:0;
+		}
+	}
 /* 5.0 Stopka - Kontakt */
 	#kontakt {
 		background-image:url("./grafika/logo-znak.svg");
@@ -370,12 +454,48 @@
 		left:0;
 		position:absolute;
 		height:2em;
+		width:3em;
 	}
 	.adres:before {
 		content:url("./grafika/adres.svg");
-		width:3em;
 	}
 	.dane-kontakt:before {
 		content:url("./grafika/kontakt.svg");
-		width:3em;
+	}
+	@media (max-width:900px) {
+		#kontakt {
+			padding-bottom:2em;
+			background-size: auto 60%;
+		}
+		#kontakt .tresc .kol {
+			width:60%;
+			padding-bottom:1em;
+		}
+		#kontakt p {
+			padding-left:6em;
+		}
+	}
+	@media (max-width:500px) {
+		#kontakt {
+			padding-bottom:2em;
+			background-size: 40% auto;
+		}
+		#kontakt .tresc .kol {
+			width:100%;
+	}
+	@media (max-width:400px) {
+		#kontakt p {
+			padding-left: 0;
+		}
+		.adres::before, .dane-kontakt::before {
+			position: relative;
+			float: none;
+			display: inline-block;
+		}
+	}
+	@media (max-width:300px) {
+		#kontakt {
+			padding-bottom: 30%;
+			background-position-x: 50%;
+		}
 	}
