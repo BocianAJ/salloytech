@@ -276,7 +276,7 @@
 	}
 	.img-baner {
 		position:absolute;
-		top:2vh;
+		top:0;
 		left:0;
 		right:0;
 		z-index:-1;
@@ -285,6 +285,7 @@
 		font-size:1.2em;
 		text-shadow:0 0 2px black;
 	}
+
 	@media (max-width:551px) {
 		.img-baner {
 			position:relative;
@@ -309,6 +310,9 @@
 	@media (max-height:800px) {
 		.main {
 			margin-top:3em;
+		}
+		.img-baner {
+			top:2vh;
 		}
 	}
 /* 4.0 Sekcje */
