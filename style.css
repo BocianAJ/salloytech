@@ -95,6 +95,7 @@
 	h1 {
 		font-size:1.8em;
 		padding-bottom: 1em;
+		text-shadow:0 0 2px black;
 	}
 	h2 {
 		font-size:1.3em;	
@@ -282,6 +283,7 @@
 	}
 	.podtytul {
 		font-size:1.2em;
+		text-shadow:0 0 2px black;
 	}
 	@media (max-width:551px) {
 		.img-baner {
