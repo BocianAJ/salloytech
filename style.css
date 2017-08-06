@@ -46,7 +46,7 @@
 		color:#36559d;
 	}
 	.main > section {
-		padding-top:2vh;
+		padding-top:8vh;
 	}
 	@media (max-height:800px) {
 		.main > section {
@@ -192,6 +192,9 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+	.header-nav a.kol {
+		width:auto;
+	}
 	.logo {
 		height:6vh;
 		display: block;
@@ -200,9 +203,12 @@
 		text-align:right;
 		order: 1; /* korekta do float-clearfix dla flexa */
 	}
+	.tresc nav.kol2 {
+		width:auto;
+	}
 	nav a {
 		text-transform:uppercase;
-		font-size: 2vh;
+		font-size: 1.9vh;
 		line-height: 1em;
 		margin:2vh 0 2vh 1em;
 		display:inline-block;
@@ -258,14 +264,19 @@
 				order: 1;
 				border: none;
 				background: #fff;
-				height: 3em;
+				height: 6vh;
 				padding: 0.3em 0;
+			}
+		}
+		@media (max-height:800px){
+			.mobile-menu {
+				height: 3em;
 			}
 		}
 /* 3.0 Header główny */
 	.main {
 		position:relative;
-		margin-top:8vh;
+		margin-top:6vh;
 	}
 	.header-baner {
 		display:flex;
@@ -278,7 +289,7 @@
 	}
 	.img-baner {
 		position:absolute;
-		top:0;
+		top:2vh;
 		left:0;
 		right:0;
 		z-index:-1;
@@ -464,7 +475,7 @@
 		float:left;
 		left:0;
 		position:absolute;
-		height:2em;
+		height:3em;
 		width:3em;
 	}
 	.adres:before {
@@ -483,16 +494,16 @@
 			padding-bottom:1em;
 		}
 		#kontakt p {
-			padding-left:6em;
+			padding-left:5em;
 		}
 	}
 	@media (max-width:500px) {
 		#kontakt {
-			padding-bottom:2em;
-			background-size: 40% auto;
+			padding-bottom: 3em;
+			background-size: 4em auto;
 		}
 		#kontakt .tresc .kol {
-			width:100%;
+			width:50%;
 	}
 	@media (max-width:400px) {
 		#kontakt p {
