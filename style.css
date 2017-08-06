@@ -251,13 +251,15 @@
 		.mobile-menu {
 			display:none;
 		}
-		@media (max-width:800px){
+		@media (max-width:600px){
 			.mobile-menu {
 				display: inline-block;
 				float: right;
 				order: 1;
 				border: none;
 				background: #fff;
+				height: 3em;
+				padding: 0.3em 0;
 			}
 		}
 /* 3.0 Header główny */
@@ -305,6 +307,9 @@
 			position:relative;
 			height:auto;
 			color:#030303;
+		}
+		.podtytul, h1 {
+			text-shadow:none;
 		}
 	}
 	@media (max-height:800px) {
