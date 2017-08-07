@@ -1,3 +1,8 @@
+//Adding classes to html if JavaScript is active
+function activeScript() {
+	document.body.className = "script";
+}
+
 //slider
 function nextSlide() {
 	var currentSlide = document.getElementsByClassName("current-img-slide")[0];
@@ -15,4 +20,10 @@ function previousSlide() {
 		currentSlide.className = "img-slide next-slide";
 		previousSlide.className = "current-img-slide";
 	}
+}
+
+//interactive mobile menu
+function showMenu() {
+	document.getElementsByTagName("nav")[0].style.display = "block";
+	document.getElementsByClassName("hamburger-menu")[0].style.display = "none";
 }
