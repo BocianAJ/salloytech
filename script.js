@@ -25,5 +25,11 @@ function previousSlide() {
 //interactive mobile menu
 function showMenu() {
 	document.getElementsByTagName("nav")[0].style.display = "block";
-	document.getElementsByClassName("hamburger-menu")[0].style.display = "none";
+	document.getElementsByClassName("menu-open")[0].style.display = "none";
+	document.getElementsByClassName("menu-close")[0].style.display = "inline-block";
+}
+function hideMenu() {
+	document.getElementsByTagName("nav")[0].style.display = "none";
+	document.getElementsByClassName("menu-close")[0].style.display = "none";
+	document.getElementsByClassName("menu-open")[0].style.display = "inline-block";
 }
