@@ -137,6 +137,9 @@
 		height: 5em;
 		display: block;
 	}
+	.script .blurowanie {
+		filter: blur(5px);
+	}
 		/* 1.2.1 Grid */
 			.kol {
 				width:20%;

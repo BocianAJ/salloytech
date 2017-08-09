@@ -24,12 +24,20 @@ function previousSlide() {
 
 //interactive mobile menu
 function showMenu() {
-	document.getElementsByTagName("nav")[0].style.display = "block";
-	document.getElementsByClassName("menu-open")[0].style.display = "none";
-	document.getElementsByClassName("menu-close")[0].style.display = "inline-block";
+	var iconMenuOpen = document.getElementsByClassName("menu-open")[0].style.display;
+	if (iconMenuOpen == "inline-block") {
+		document.getElementsByTagName("nav")[0].style.display = "block";
+		document.getElementsByClassName("menu-open")[0].style.display = "none";
+		document.getElementsByClassName("menu-close")[0].style.display = "inline-block";
+		document.getElementsByClassName("main")[0].classList.add("blurowanie");
+	}
 }
 function hideMenu() {
-	document.getElementsByTagName("nav")[0].style.display = "none";
-	document.getElementsByClassName("menu-close")[0].style.display = "none";
-	document.getElementsByClassName("menu-open")[0].style.display = "inline-block";
+	var iconMenuClose = document.getElementsByClassName("menu-close")[0].style.display;
+	if (iconMenuClose == "inline-block") {
+		document.getElementsByTagName("nav")[0].style.display = "none";
+		document.getElementsByClassName("menu-close")[0].style.display = "none";
+		document.getElementsByClassName("menu-open")[0].style.display = "inline-block";
+		document.getElementsByClassName("main")[0].classList.remove("blurowanie");
+	}
 }
