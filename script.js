@@ -24,8 +24,9 @@ function previousSlide() {
 
 //interactive mobile menu
 function showMenu() {
-	var iconMenuOpen = document.getElementsByClassName("menu-open")[0].style.display;
-	if (iconMenuOpen == "inline-block") {
+	var iconMenuOpen = document.getElementsByClassName("menu-open")[0];
+	var elementDisplay = window.getComputedStyle(iconMenuOpen, null).display;
+	if (elementDisplay == "block") {
 		document.getElementsByTagName("nav")[0].style.display = "block";
 		document.getElementsByClassName("menu-open")[0].style.display = "none";
 		document.getElementsByClassName("menu-close")[0].style.display = "inline-block";
@@ -40,4 +41,4 @@ function hideMenu() {
 		document.getElementsByClassName("menu-open")[0].style.display = "inline-block";
 		document.getElementsByClassName("main")[0].classList.remove("blurowanie");
 	}
-}
+} 
