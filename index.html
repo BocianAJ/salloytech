@@ -37,7 +37,7 @@
 		<section id="o-firmie">
 			<h2>O firmie</h2>
 			<section class="float-clearfix">
-				<picture>
+				<picture onload="slideInAnimation()">
 					<source media="(max-width:600px)" srcset="./grafika/mobile/img1-mobile.jpg">
 					<img class="kol2" src="./grafika/img1.jpg" alt=""/>
 				</picture>
@@ -89,7 +89,10 @@
 					<strong>Zachęcamy do zapytań ofertowych.</strong>
 				</div>
 			</div>
-			<img class="kol2 kol-prawa" src="./grafika/img2.jpg" alt=""/>
+			<picture onload="slideInAnimation()">
+				<source media="(max-width:600px)" srcset="./grafika/mobile/img2-mobile.jpg">
+				<img class="kol2 kol-prawa" src="./grafika/img2.jpg" alt=""/>
+			</picture>
 		</section>
 		<section id="galeria" class="tresc float-clear">
 			<h2>Galeria</h2>

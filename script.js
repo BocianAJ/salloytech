@@ -31,6 +31,7 @@ function showMenu() {
 		document.getElementsByClassName("menu-open")[0].style.display = "none";
 		document.getElementsByClassName("menu-close")[0].style.display = "inline-block";
 		document.getElementsByClassName("main")[0].classList.add("blurowanie");
+		document.getElementById("kontakt").classList.add("blurowanie");
 	}
 }
 function hideMenu() {
@@ -40,5 +41,6 @@ function hideMenu() {
 		document.getElementsByClassName("menu-close")[0].style.display = "none";
 		document.getElementsByClassName("menu-open")[0].style.display = "inline-block";
 		document.getElementsByClassName("main")[0].classList.remove("blurowanie");
+		document.getElementById("kontakt").classList.remove("blurowanie");
 	}
 } 
