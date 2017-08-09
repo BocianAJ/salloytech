@@ -44,3 +44,13 @@ function hideMenu() {
 		document.getElementById("kontakt").classList.remove("blurowanie");
 	}
 } 
+
+//slide in animation
+
+function slideInAnimation() {
+	var animatedElements = document.getElementsByClassName("slidein-animation");
+	var animElemCount = animatedElements.length;
+	for (x = 0; x < animElemCount; x++){
+		animatedElements[x].classList.add("base-position");
+	}
+}

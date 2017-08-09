@@ -5,6 +5,7 @@
 	/* 1.1 Typografia */
 	/* 1.2 Style wielorazowego użytku */
 		/* 1.2.1 Grid */
+	/* 1.3 Animacje */
 /* 2.0 Menu główne */
 	/* 2.1 Menu mobilne */
 /* 3.0 Header główny */
@@ -181,6 +182,23 @@
 					padding:0;
 				}
 			}
+	/* 1.3 Animacje */
+	.script .animation-box {
+		overflow:hidden;
+	}
+	.script .slidein-animation {
+
+	}
+	.script .right-slidein {
+		transform: translateX(100%);
+	}
+	.script .left-slidein {
+		transform: translateX(-100%);
+	}
+	.script .base-position {
+		transform: translateX(0);
+		transition: transform 1s;
+	}
 /* 2.0 Menu główne */
 	.header-nav {
 		position: fixed;
