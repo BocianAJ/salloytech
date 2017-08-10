@@ -197,7 +197,7 @@
 	}
 	.script .base-position {
 		transform: translateX(0);
-		transition: transform 1s;
+		transition: transform 5s;
 	}
 /* 2.0 Menu główne */
 	.header-nav {

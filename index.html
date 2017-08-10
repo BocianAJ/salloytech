@@ -37,7 +37,7 @@
 		<section id="o-firmie">
 			<h2>O firmie</h2>
 			<section class="float-clearfix">
-				<picture ontouchstart="slideInAnimation()" class="kol2 animation-box">
+				<picture class="kol2 animation-box">
 					<source media="(max-width:600px)" srcset="./grafika/mobile/img1-mobile.jpg">
 					<img class="slidein-animation left-slidein" src="./grafika/img1.jpg" alt=""/>
 				</picture>
@@ -89,7 +89,7 @@
 					<strong>Zachęcamy do zapytań ofertowych.</strong>
 				</div>
 			</div>
-			<picture onwheel="slideInAnimation()" class="kol2 kol-prawa animation-box">
+			<picture class="kol2 kol-prawa animation-box">
 				<source media="(max-width:600px)" srcset="./grafika/mobile/img2-mobile.jpg">
 				<img class="slidein-animation right-slidein" src="./grafika/img2.jpg" alt=""/>
 			</picture>
@@ -129,5 +129,28 @@
 		</div>
 	</footer>
 </div>
+<script>
+var el = document.getElementsByClassName("slidein-animation")[0];
+
+function inViewport(el) {
+
+    var r, html;
+    if ( !el || 1 !== el.nodeType ) { return false; }
+    html = document.documentElement;
+    r = el.getBoundingClientRect();
+
+    return ( !!r 
+      && r.bottom >= 0 
+      && r.right >= 0 
+      && r.top <= html.clientHeight 
+      && r.left <= html.clientWidth 
+    );
+
+}
+
+if (inViewport(el)) {
+el.classList.add("base-position");
+}
+</script>
 </body>
 </html>
