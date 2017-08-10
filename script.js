@@ -46,7 +46,6 @@ function hideMenu() {
 } 
 
 //slide in animation
-
 function slideInAnimation() {
 	var animatedElements = document.getElementsByClassName("slidein-animation");
 	var animElemCount = animatedElements.length;
