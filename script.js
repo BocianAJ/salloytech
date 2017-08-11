@@ -8,7 +8,6 @@ function nextSlide() {
 	var currentSlide = document.getElementsByClassName("current-img-slide")[0];
 	var nextSlide = currentSlide.nextElementSibling;
 	if (Boolean(nextSlide) == true && nextSlide.className == "img-slide next-slide") {
-		console.log("hej");
 		nextSlide.className = "current-img-slide";
 		currentSlide.className = "img-slide previous-slide";
 	}
@@ -46,10 +45,45 @@ function hideMenu() {
 } 
 
 //slide in animation
-function slideInAnimation() {
-	var animatedElements = document.getElementsByClassName("slidein-animation");
-	var animElemCount = animatedElements.length;
-	for (x = 0; x < animElemCount; x++){
-		animatedElements[x].classList.add("base-position");
-	}
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+function onVisibilityChange(el, callback) {
+    var old_visible;
+    return function () {
+        var visible = isElementInViewport(el);
+        if (visible != old_visible) {
+            old_visible = visible;
+            if (typeof callback == 'function') {
+                callback();
+            }
+        }
+    }
+}
+function isElementInViewport2(el2) {
+    var rect2 = el2.getBoundingClientRect();
+    return (
+        rect2.bottom > 0 &&
+        rect2.right > 0 &&
+        rect2.left < (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */ &&
+        rect2.top < (window.innerHeight || document.documentElement.clientHeight) /* or $(window).height() */
+    );
+}
+function onVisibilityChange2(el2, callback2) {
+    var old_visible2;
+    return function () {
+        var visible2 = isElementInViewport2(el2);
+        if (visible2 != old_visible2) {
+            old_visible2 = visible2;
+            if (typeof callback2 == 'function') {
+                callback2();
+            }
+        }
+    }
 }

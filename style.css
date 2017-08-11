@@ -197,7 +197,7 @@
 	}
 	.script .base-position {
 		transform: translateX(0);
-		transition: transform 5s;
+		transition: transform 1s;
 	}
 /* 2.0 Menu główne */
 	.header-nav {
@@ -358,6 +358,8 @@
 	@media (max-width:551px) {
 		.img-baner {
 			position:relative;
+			min-height: 80vw;
+			clip: rect(0, 100vw, 80vw, 0);
 		}
 		.header-baner {
 			position:absolute;
