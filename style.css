@@ -351,10 +351,12 @@
 		@media (max-height:800px) and (max-width:600px) {
 			.script .mobile-menu {
 				height: 3em;
+				max-width:3em;
 				padding: 0.25em 0;
 			}
 			.script .logo {
 				height:3em;
+				max-width:80vw;
 			}
 			.script nav a {
 				font-size:1em;

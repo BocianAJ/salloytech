@@ -24,8 +24,13 @@ function previousSlide() {
 //interactive mobile menu
 function showMenu() {
 	var iconMenuOpen = document.getElementsByClassName("menu-open")[0];
-	var elementDisplay = window.getComputedStyle(iconMenuOpen, null).display;
-	if (elementDisplay == "block") {
+	if (typeof getComputedStyle !== 'undefined') {
+		var elementDisplay = window.getComputedStyle(iconMenuOpen, null).display;
+	}
+	else {
+		var elementDisplay = window.currentStyle(iconMenuOpen).display;
+	}
+	if (elementDisplay != "none") {
 		document.getElementsByTagName("nav")[0].style.display = "block";
 		document.getElementsByClassName("menu-open")[0].style.display = "none";
 		document.getElementsByClassName("menu-close")[0].style.display = "inline-block";
