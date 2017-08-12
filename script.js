@@ -48,14 +48,14 @@ function hideMenu() {
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.bottom > 0 &&
+        rect.right > 0 &&
+        rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+        rect.top < (window.innerHeight || document.documentElement.clientHeight)
     );
 }
 function onVisibilityChange(el, callback) {
-    var old_visible;
+    var old_visible = false;
     return function () {
         var visible = isElementInViewport(el);
         if (visible != old_visible) {
@@ -66,17 +66,18 @@ function onVisibilityChange(el, callback) {
         }
     }
 }
+
 function isElementInViewport2(el2) {
     var rect2 = el2.getBoundingClientRect();
     return (
         rect2.bottom > 0 &&
         rect2.right > 0 &&
-        rect2.left < (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */ &&
-        rect2.top < (window.innerHeight || document.documentElement.clientHeight) /* or $(window).height() */
+        rect2.left < (window.innerWidth || document.documentElement.clientWidth) &&
+        rect2.top < (window.innerHeight || document.documentElement.clientHeight)
     );
 }
 function onVisibilityChange2(el2, callback2) {
-    var old_visible2;
+    var old_visible2 = false;
     return function () {
         var visible2 = isElementInViewport2(el2);
         if (visible2 != old_visible2) {

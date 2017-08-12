@@ -135,9 +135,13 @@ var handler = onVisibilityChange(el, function() {
     el.children[1].classList.add("base-position");
 });
 if (window.addEventListener) {
+addEventListener('DOMContentLoaded', handler, false); 
+    addEventListener('load', handler, false);
     addEventListener('scroll', handler, false); 
     addEventListener('resize', handler, false); 
 } else if (window.attachEvent)  {
+ attachEvent('onDOMContentLoaded', handler); // IE9+ :(
+    attachEvent('onload', handler);
     attachEvent('onscroll', handler);
     attachEvent('onresize', handler);
 }
@@ -147,12 +151,17 @@ var handler2 = onVisibilityChange2(el2, function() {
     el2.children[1].classList.add("base-position");
 });
 if (window.addEventListener) {
+addEventListener('DOMContentLoaded', handler2, false); 
+    addEventListener('load', handler2, false);
     addEventListener('scroll', handler2, false); 
     addEventListener('resize', handler2, false); 
 } else if (window.attachEvent)  {
+ attachEvent('onDOMContentLoaded', handler2); // IE9+ :(
+    attachEvent('onload', handler2);
     attachEvent('onscroll', handler2);
     attachEvent('onresize', handler2);
 }
+
 </script>
 </body>
 </html>
