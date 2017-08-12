@@ -39,7 +39,7 @@
 			<section class="float-clearfix">
 				<picture class="kol2 animation-box">
 					<source media="(max-width:600px)" srcset="./grafika/mobile/img1-mobile.jpg">
-					<img class="slidein-animation left-slidein" src="./grafika/img1.jpg" alt=""/>
+					<img class="left-slidein" src="./grafika/img1.jpg" alt=""/>
 				</picture>
 				<div class="tresc float-clearfix">
 					<div class="kol2 kol-prawa float-clearfix">
@@ -53,8 +53,8 @@
 			<section class="atuty tresc float-clearfix">
 				<h4 class="kol2 kol-prawa">Nasze główne atuty:</h4>
 				<section class="float-clear float-clearfix">
-					<div class="kol">
-						<img class="ikona" src="./grafika/jakosc.svg" alt="jakość"/>
+					<div class="kol animation-box ">
+						<img class="ikona right-pop" src="./grafika/jakosc.svg" alt="jakość"/>
 					</div>
 					<div class="kol2 kol-prawa">
 						<h5>Jakość</h5>
@@ -62,8 +62,8 @@
 					</div>
 				</section>
 				<section class="float-clearfix">
-					<div class="kol">
-						<img class="ikona" src="./grafika/technologia.svg" alt="technologia"/>
+					<div class="kol animation-box">
+						<img class="ikona right-pop delay-cwiercs" src="./grafika/technologia.svg" alt="technologia"/>
 					</div>
 					<div class="kol2 kol-prawa">
 						<h5>Technologia</h5>
@@ -71,8 +71,8 @@
 					</div>
 				</section>
 				<section class="float-clearfix">
-					<div class="kol">
-						<img class="ikona" src="./grafika/terminowosc.svg" alt="terminowość"/>
+					<div class="kol animation-box">
+						<img class="ikona right-pop delay-pols" src="./grafika/terminowosc.svg" alt="terminowość"/>
 					</div>
 					<div class="kol2 kol-prawa">
 						<h5>Terminowosć</h5>
@@ -91,7 +91,7 @@
 			</div>
 			<picture class="kol2 kol-prawa animation-box">
 				<source media="(max-width:600px)" srcset="./grafika/mobile/img2-mobile.jpg">
-				<img class="slidein-animation right-slidein" src="./grafika/img2.jpg" alt=""/>
+				<img class="right-slidein" src="./grafika/img2.jpg" alt=""/>
 			</picture>
 		</section>
 		<section id="galeria" class="tresc float-clear">
@@ -130,38 +130,85 @@
 	</footer>
 </div>
 <script>
-var el = document.getElementsByClassName("animation-box")[0];
-var handler = onVisibilityChange(el, function() {
-    el.children[1].classList.add("base-position");
-});
-if (window.addEventListener) {
-addEventListener('DOMContentLoaded', handler, false); 
-    addEventListener('load', handler, false);
-    addEventListener('scroll', handler, false); 
-    addEventListener('resize', handler, false); 
-} else if (window.attachEvent)  {
- attachEvent('onDOMContentLoaded', handler); // IE9+ :(
-    attachEvent('onload', handler);
-    attachEvent('onscroll', handler);
-    attachEvent('onresize', handler);
-}
+	var el = document.getElementsByClassName("animation-box")[0];
+	var handler = onVisibilityChange(el, function() {
+		el.children[1].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+		addEventListener('DOMContentLoaded', handler, false); 
+		addEventListener('load', handler, false);
+		addEventListener('scroll', handler, false); 
+		addEventListener('resize', handler, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler); // IE9+ :(
+		attachEvent('onload', handler);
+		attachEvent('onscroll', handler);
+		attachEvent('onresize', handler);
+	}
 
-var el2 = document.getElementsByClassName("animation-box")[1];
-var handler2 = onVisibilityChange2(el2, function() {
-    el2.children[1].classList.add("base-position");
-});
-if (window.addEventListener) {
-addEventListener('DOMContentLoaded', handler2, false); 
-    addEventListener('load', handler2, false);
-    addEventListener('scroll', handler2, false); 
-    addEventListener('resize', handler2, false); 
-} else if (window.attachEvent)  {
- attachEvent('onDOMContentLoaded', handler2); // IE9+ :(
-    attachEvent('onload', handler2);
-    attachEvent('onscroll', handler2);
-    attachEvent('onresize', handler2);
-}
-
+	var el2 = document.getElementsByClassName("animation-box")[1];
+	var handler2 = onVisibilityChange(el2, function() {
+		el2.children[0].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler2, false); 
+		addEventListener('load', handler2, false);
+		addEventListener('scroll', handler2, false); 
+		addEventListener('resize', handler2, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler2); // IE9+ :(
+		attachEvent('onload', handler2);
+		attachEvent('onscroll', handler2);
+		attachEvent('onresize', handler2);
+	}
+	
+	var el3 = document.getElementsByClassName("animation-box")[2];
+	var handler3 = onVisibilityChange(el3, function() {
+		el3.children[0].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler3, false); 
+		addEventListener('load', handler3, false);
+		addEventListener('scroll', handler3, false); 
+		addEventListener('resize', handler3, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler3); // IE9+ :(
+		attachEvent('onload', handler3);
+		attachEvent('onscroll', handler3);
+		attachEvent('onresize', handler3);
+	}
+	
+	var el4 = document.getElementsByClassName("animation-box")[3];
+	var handler4 = onVisibilityChange(el4, function() {
+		el4.children[0].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler4, false); 
+		addEventListener('load', handler4, false);
+		addEventListener('scroll', handler4, false); 
+		addEventListener('resize', handler4, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler4); // IE9+ :(
+		attachEvent('onload', handler4);
+		attachEvent('onscroll', handler4);
+		attachEvent('onresize', handler4);
+	}
+	
+	var el5 = document.getElementsByClassName("animation-box")[4];
+	var handler5 = onVisibilityChange(el5, function() {
+		el5.children[1].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler5, false); 
+		addEventListener('load', handler5, false);
+		addEventListener('scroll', handler5, false); 
+		addEventListener('resize', handler5, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler5); // IE9+ :(
+		attachEvent('onload', handler5);
+		attachEvent('onscroll', handler5);
+		attachEvent('onresize', handler5);
+	}
 </script>
 </body>
 </html>

@@ -186,18 +186,53 @@
 	.script .animation-box {
 		overflow:hidden;
 	}
-	.script .slidein-animation {
-
-	}
 	.script .right-slidein {
-		transform: translateX(100%);
+		animation-name:right-slidein;
+		animation-duration:1s;
+		-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+		animation-play-state: paused;
+		 -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+		animation-fill-mode: backwards;
 	}
 	.script .left-slidein {
-		transform: translateX(-100%);
+		animation-name:left-slidein;
+		animation-duration:1s;
+		-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+		animation-play-state: paused;
+		 -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+		animation-fill-mode: backwards;
+	}	
+	.script .right-pop {
+		animation-name:right-pop;
+		animation-duration:1s;
+		-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+		animation-play-state: paused;
+		 -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
+		animation-fill-mode: backwards;
+	}
+	.script .delay-pols {
+		-webkit-animation-delay: 0.6s; /* Safari 4.0 - 8.0 */
+		animation-delay: 0.6s;
+	}
+	.script .delay-cwiercs{
+		-webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
+		animation-delay: 0.3s;
+	}
+	@keyframes right-slidein {
+		from {transform: translateX(100%)};
+		to {transform: translateX(0)};
+	}
+	@keyframes left-slidein {
+		from {transform: translateX(-100%);};
+		to {transform: translateX(0)};
+	}
+	@keyframes right-pop {
+		from {transform: translateX(-100%); opacity:0; padding:3em;};
+		to {transform: translateX(0%); opacity:1; padding:0;};
 	}
 	.script .base-position {
-		transform: translateX(0);
-		transition: transform 1s;
+		-webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+		animation-play-state: running;
 	}
 /* 2.0 Menu główne */
 	.header-nav {
