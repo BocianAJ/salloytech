@@ -7,6 +7,7 @@
 	<meta name="author" content="Agnieszka Bocian">
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<script src="../script.js"></script>
+	<script src="../smooth-scroll.js"></script>
 </head>
 <body onload="activeScript()">
 <div class="tlo-opakowanie">
@@ -79,7 +80,7 @@
 					</div>
 					<div class="kol2 kol-prawa">
 						<h5>Punctuality</h5>
-						<p>We guarantee fast response times from the design phase to the delivery of material through the Just-in-Time method.</p>
+						<p>We guarantee fast response times from the design phase to the delivery of material through the Just-in-Time method .</p>
 					</div>
 				</section>
 			</section>
@@ -133,6 +134,7 @@
 	</footer>
 </div>
 <script>
+	//on load animation
 	var el = document.getElementsByClassName("animation-box")[0];
 	var handler = onVisibilityChange(el, function() {
 		el.children[1].classList.add("base-position");
@@ -212,6 +214,9 @@
 		attachEvent('onscroll', handler5);
 		attachEvent('onresize', handler5);
 	}
+	
+	//smooth scrolling
+	var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 </body>
 </html>

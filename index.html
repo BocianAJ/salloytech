@@ -7,6 +7,7 @@
 	<meta name="author" content="Agnieszka Bocian">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
+	<script src="smooth-scroll.js"></script>
 </head>
 <body onload="activeScript()">
 <div class="tlo-opakowanie">
@@ -212,6 +213,8 @@
 		attachEvent('onscroll', handler5);
 		attachEvent('onresize', handler5);
 	}
+	//smooth scrolling
+	var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 </body>
 </html>
