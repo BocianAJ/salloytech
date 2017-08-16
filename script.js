@@ -94,3 +94,5 @@ function flagaPolskiSzara() {
 	var flaga = document.getElementsByClassName("flaga-polska")[0];
 	flaga.src = "../grafika/flaga-pl-szara.svg";
 }
+
+//smooth scrolling

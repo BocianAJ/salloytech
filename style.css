@@ -48,6 +48,9 @@
 	a:hover, a:focus, a:active {
 		color:#36559d;
 	}
+	button:hover, button:focus, button:active {
+		outline: none; /* By zlikwidować styl w Operze */
+	}
 	.main > section {
 		padding-top:8vh;
 	}
@@ -406,7 +409,7 @@
 		}
 	}
 	@media (max-height:800px) and (max-width:600px) {
-		.flaga {
+		.script .flaga {
 			height: 2em;
 			margin: 0.5em 0;
 		}
@@ -548,7 +551,7 @@
 		min-width:150px;
 	}
 	@media(max-width:350px){
-		.script .current-img-slide, .img-slide {
+		.current-img-slide, .img-slide {
 			margin:0 auto;
 			display:block;
 			float:none;
