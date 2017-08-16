@@ -220,16 +220,16 @@
 		animation-delay: 0.3s;
 	}
 	@keyframes right-slidein {
-		from {transform: translateX(100%)};
-		to {transform: translateX(0)};
+		from {transform: translateX(100%);}
+		to {transform: translateX(0);}
 	}
 	@keyframes left-slidein {
-		from {transform: translateX(-100%);};
-		to {transform: translateX(0)};
+		from {transform: translateX(-100%);}
+		to {transform: translateX(0);}
 	}
 	@keyframes right-pop {
-		from {transform: translateX(-100%); opacity:0; padding:3em;};
-		to {transform: translateX(0%); opacity:1; padding:0;};
+		from {transform: translateX(-100%); opacity:0; padding:3em;}
+		to {transform: translateX(0%); opacity:1; padding:0;}
 	}
 	.script .base-position {
 		-webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
@@ -696,6 +696,7 @@
 	@media (max-width:300px) {
 		#kontakt {
 			padding-bottom: 30%;
+			background-position: 50% 100%;
 			background-position-x: 50%;
 		}
 		#kontakt .tresc .kol {
