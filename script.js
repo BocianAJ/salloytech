@@ -24,6 +24,7 @@ function previousSlide() {
 //interactive mobile menu
 function showMenu() {
 	var iconMenuOpen = document.getElementsByClassName("menu-open")[0];
+	var languageIcon = document.getElementsByClassName("jezyki")[0];
 	if (typeof getComputedStyle !== 'undefined') {
 		var elementDisplay = window.getComputedStyle(iconMenuOpen, null).display;
 	}
@@ -36,16 +37,19 @@ function showMenu() {
 		document.getElementsByClassName("menu-close")[0].style.display = "inline-block";
 		document.getElementsByClassName("main")[0].classList.add("blurowanie");
 		document.getElementById("kontakt").classList.add("blurowanie");
+		languageIcon.style.display = "block";
 	}
 }
 function hideMenu() {
 	var iconMenuClose = document.getElementsByClassName("menu-close")[0].style.display;
+	var languageIcon = document.getElementsByClassName("jezyki")[0];
 	if (iconMenuClose == "inline-block") {
 		document.getElementsByTagName("nav")[0].style.display = "none";
 		document.getElementsByClassName("menu-close")[0].style.display = "none";
 		document.getElementsByClassName("menu-open")[0].style.display = "inline-block";
 		document.getElementsByClassName("main")[0].classList.remove("blurowanie");
 		document.getElementById("kontakt").classList.remove("blurowanie");
+		languageIcon.style.display = "none";
 	}
 } 
 
@@ -70,4 +74,23 @@ function onVisibilityChange(el, callback) {
             }
         }
     }
+}
+
+//efekt hover dla flag 
+function flagaAngliiKolor() {
+	var flaga = document.getElementsByClassName("flaga-brytyjska")[0];
+	flaga.src = "./grafika/flaga-eng.svg";
+}
+function flagaPolskiKolor() {
+	var flaga = document.getElementsByClassName("flaga-polska")[0];
+	flaga.src = "../grafika/flaga-pl.svg";
+}
+
+function flagaAngliiSzara() {
+	var flaga = document.getElementsByClassName("flaga-brytyjska")[0];
+	flaga.src = "./grafika/flaga-eng-szara.svg";
+}
+function flagaPolskiSzara() {
+	var flaga = document.getElementsByClassName("flaga-polska")[0];
+	flaga.src = "../grafika/flaga-pl-szara.svg";
 }

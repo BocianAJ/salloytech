@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
 	<title>SalloyTech</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Agnieszka Bocian">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="../script.js"></script>
 </head>
 <body onload="activeScript()">
 <div class="tlo-opakowanie">
 	<header class="header-nav">
 		<div class="tresc float-clearfix">
-			<a href="" class="kol"> <img class="mobile-logo logo" src="./grafika/logo-horizontal.svg" alt="SalloyTech logo" /><img src="./grafika/logo.svg" class="logo" alt="SalloyTech logo"/></a>
-			<button class="mobile-menu menu-open" onclick="showMenu()"><img class="hamburger-menu" src="./grafika/mobile-menu.svg" alt="menu mobilne"/></button>
-			<button class="mobile-menu menu-close" onclick="hideMenu()"><img class="hamburger-menu" src="./grafika/menu-close.svg" alt="menu mobilne"/></button>
+			<a href="" class="kol"> <img class="mobile-logo logo" src="../grafika/logo-horizontal.svg" alt="SalloyTech logo" /><img src="../grafika/logo.svg" class="logo" alt="SalloyTech logo"/></a>
+			<button class="mobile-menu menu-open" onclick="showMenu()"><img class="hamburger-menu" src="../grafika/mobile-menu.svg" alt="menu mobilne"/></button>
+			<button class="mobile-menu menu-close" onclick="hideMenu()"><img class="hamburger-menu" src="../grafika/menu-close.svg" alt="menu mobilne"/></button>
 			<nav class="kol2 kol-prawa">
 				<a href="#o-firmie" onclick="hideMenu()">O firmie</a>
 				<a href="#oferta" onclick="hideMenu()">Oferta</a>
@@ -22,14 +22,14 @@
 				<a href="#kontakt" onclick="hideMenu()">Kontakt</a>
 			</nav>
 			<div class="jezyki">
-				<a href="./en/index.html" title="english site" onmouseenter="flagaAngliiKolor()" onmouseleave="flagaAngliiSzara()"><img class="flaga flaga-brytyjska" src="./grafika/flaga-eng-szara.svg" alt="flaga brytyjska"/></a>
+				<a href="../index.html" title="polska wersja językowa" onmouseenter="flagaPolskiKolor()" onmouseleave="flagaPolskiSzara()"><img class="flaga flaga-polska" src="../grafika/flaga-pl-szara.svg" alt="flaga Polski"/></a>
 			</div>
 		</div>
 	</header>
 	<section class="float-clear main">
 		<picture>
-			<source media="(max-width:550px)" srcset="./grafika/mobile/header-mobile.jpg">
-			<img class="img-baner" src="./grafika/header.jpg" alt=""/>
+			<source media="(max-width:550px)" srcset="../grafika/mobile/header-mobile.jpg">
+			<img class="img-baner" src="../grafika/header.jpg" alt=""/>
 		</picture>
 		<header class="header-baner tresc float-clearfix">
 			<div class="kol2">
@@ -41,8 +41,8 @@
 			<h2>O firmie</h2>
 			<section class="float-clearfix">
 				<picture class="kol2 animation-box">
-					<source media="(max-width:600px)" srcset="./grafika/mobile/img1-mobile.jpg">
-					<img class="left-slidein delay-cwiercs" src="./grafika/img1.jpg" alt=""/>
+					<source media="(max-width:600px)" srcset="../grafika/mobile/img1-mobile.jpg">
+					<img class="left-slidein delay-cwiercs" src="../grafika/img1.jpg" alt=""/>
 				</picture>
 				<div class="tresc float-clearfix">
 					<div class="kol2 kol-prawa float-clearfix">
@@ -57,7 +57,7 @@
 				<h4 class="kol2 kol-prawa">Nasze główne atuty:</h4>
 				<section class="float-clear float-clearfix">
 					<div class="kol animation-box ">
-						<img class="ikona right-pop" src="./grafika/jakosc.svg" alt="jakość"/>
+						<img class="ikona right-pop" src="../grafika/jakosc.svg" alt="jakość"/>
 					</div>
 					<div class="kol2 kol-prawa">
 						<h5>Jakość</h5>
@@ -66,7 +66,7 @@
 				</section>
 				<section class="float-clearfix">
 					<div class="kol animation-box">
-						<img class="ikona right-pop delay-cwiercs" src="./grafika/technologia.svg" alt="technologia"/>
+						<img class="ikona right-pop delay-cwiercs" src="../grafika/technologia.svg" alt="technologia"/>
 					</div>
 					<div class="kol2 kol-prawa">
 						<h5>Technologia</h5>
@@ -75,7 +75,7 @@
 				</section>
 				<section class="float-clearfix">
 					<div class="kol animation-box">
-						<img class="ikona right-pop delay-pols" src="./grafika/terminowosc.svg" alt="terminowość"/>
+						<img class="ikona right-pop delay-pols" src="../grafika/terminowosc.svg" alt="terminowość"/>
 					</div>
 					<div class="kol2 kol-prawa">
 						<h5>Terminowosć</h5>
@@ -93,24 +93,24 @@
 				</div>
 			</div>
 			<picture class="kol2 kol-prawa animation-box">
-				<source media="(max-width:600px)" srcset="./grafika/mobile/img2-mobile.jpg">
-				<img class="right-slidein delay-cwiercs" src="./grafika/img2.jpg" alt=""/>
+				<source media="(max-width:600px)" srcset="../grafika/mobile/img2-mobile.jpg">
+				<img class="right-slidein delay-cwiercs" src="../grafika/img2.jpg" alt=""/>
 			</picture>
 		</section>
 		<section id="galeria" class="tresc float-clear">
 			<h2>Galeria</h2>
 			<p>Wykonane przez nas produkty:</p>
 			<div class="slider">
-				<img class="current-img-slide" src="./grafika/galeria/i-3gZqLh3-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="./grafika/galeria/i-92s4HZf-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="./grafika/galeria/i-ggH3WSC-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="./grafika/galeria/i-HxhJnW4-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="./grafika/galeria/i-L7PCD7g-XL.jpg" alt=""/>
+				<img class="current-img-slide" src="../grafika/galeria/i-3gZqLh3-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-92s4HZf-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-ggH3WSC-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-HxhJnW4-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-L7PCD7g-XL.jpg" alt=""/>
 				<button class="slider-btn lewy-btn" onclick="previousSlide()">
-					<img src="./grafika/arrow-lewa.svg" alt=""/>
+					<img src="../grafika/arrow-lewa.svg" alt=""/>
 				</button>
 				<button class="slider-btn prawy-btn" onclick="nextSlide()">
-					<img src="./grafika/arrow-prawa.svg" alt=""/>
+					<img src="../grafika/arrow-prawa.svg" alt=""/>
 				</button>
 			</div>
 		</section>
