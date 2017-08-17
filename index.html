@@ -28,7 +28,7 @@
 		</div>
 	</header>
 	<section class="float-clear main">
-		<picture>
+		<picture class="picture-baner">
 			<source media="(max-width:550px)" srcset="./grafika/mobile/header-mobile.jpg">
 			<img class="img-baner" src="./grafika/header.jpg" alt=""/>
 		</picture>
@@ -133,6 +133,16 @@
 		</div>
 	</footer>
 </div>
+<!--[if IE]>
+		<style>
+			@media (max-width:551px) {
+				.img-baner {
+					left:-60%;
+					width:inherit;
+				}
+			}
+		</style>
+	<![endif]-->
 <script>
 	var el = document.getElementsByClassName("animation-box")[0];
 	var handler = onVisibilityChange(el, function() {
