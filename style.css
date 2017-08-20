@@ -192,13 +192,6 @@
 	.script .animation-box {
 		overflow:hidden;
 	}
-<<<<<<< HEAD
-	.script .slidein-animation {
-		transition: transform 1s;
-	}
-=======
->>>>>>> 986d21bea8a6cad4287e523a1574b980c928de97
-=======
 	.script .right-slidein {
 		-webkit-animation-name:right-slidein;
 		        animation-name:right-slidein;
@@ -262,13 +255,8 @@
 		to {-webkit-transform: translateX(0%);transform: translateX(0%); opacity:1; padding:0;}
 	}
 	.script .base-position {
-<<<<<<< HEAD
-		transform: translateX(0);
-		transition: transform 5s;
-=======
 		-webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
 		animation-play-state: running;
->>>>>>> 986d21bea8a6cad4287e523a1574b980c928de97
 	}
 /* 2.0 Menu główne */
 	.header-nav {
