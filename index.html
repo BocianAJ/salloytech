@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 	<title>SalloyTech</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Agnieszka Bocian">
-	<link rel="stylesheet" type="text/css" href="../style.css">
-	<script src="../script.js"></script>
-	<script src="../smooth-scroll.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<script src="smooth-scroll.js"></script>
 </head>
 <body onload="activeScript()">
 <div class="tlo-opakowanie">
 	<header class="header-nav">
 		<div class="tresc float-clearfix">
-			<a href="" class="kol"> <img class="mobile-logo logo" src="../grafika/logo-horizontal.svg" alt="SalloyTech logo" /><img src="../grafika/logo.svg" class="logo" alt="SalloyTech logo"/></a>
-			<button class="mobile-menu menu-open" onclick="showMenu()"><img class="hamburger-menu" src="../grafika/mobile-menu.svg" alt="menu mobilne"/></button>
-			<button class="mobile-menu menu-close" onclick="hideMenu()"><img class="hamburger-menu" src="../grafika/menu-close.svg" alt="menu mobilne"/></button>
+			<a href="" class="kol"> <img class="mobile-logo logo" src="./grafika/logo-horizontal.svg" alt="SalloyTech logo" /><img src="./grafika/logo.svg" class="logo" alt="SalloyTech logo"/></a>
+			<button class="mobile-menu menu-open" onclick="showMenu()"><img class="hamburger-menu" src="./grafika/mobile-menu.svg" alt="menu mobilne"/></button>
+			<button class="mobile-menu menu-close" onclick="hideMenu()"><img class="hamburger-menu" src="./grafika/menu-close.svg" alt="menu mobilne"/></button>
 			<nav class="kol2 kol-prawa">
-				<a href="#o-firmie" onclick="hideMenu()">About us</a>
-				<a href="#oferta" onclick="hideMenu()">Offer</a>
-				<a href="#galeria" onclick="hideMenu()">Galery</a>
-				<a href="#kontakt" onclick="hideMenu()">Contact</a>
+				<a href="#o-firmie" onclick="hideMenu()">O firmie</a>
+				<a href="#oferta" onclick="hideMenu()">Oferta</a>
+				<a href="#galeria" onclick="hideMenu()">Galeria</a>
+				<a href="#kontakt" onclick="hideMenu()">Kontakt</a>
 			</nav>
 			<div class="jezyki">
-				<a href="../index.html" title="polska wersja językowa" onmouseenter="flagaPolskiKolor()" onmouseleave="flagaPolskiSzara()" ontouchstart="flagaPolskiKolor()" ontouchend="flagaPolskiSzara()"><img class="flaga flaga-polska" src="../grafika/flaga-pl-szara.svg" alt="flaga Polski"/></a>
+				<a href="./en/index.html" title="english site" onmouseenter="flagaAngliiKolor()" ontouchstart="flagaAngliiKolor()" onmouseleave="flagaAngliiSzara()" ontouchend="flagaAngliiSzara()"><img class="flaga flaga-brytyjska" src="./grafika/flaga-eng-szara.svg" alt="flaga brytyjska"/></a>
 			</div>
 		</div>
 	</header>
 	<section class="float-clear main">
-		<picture>
-			<source media="(max-width:550px)" srcset="../grafika/mobile/header-mobile.jpg">
-			<img class="img-baner" src="../grafika/header.jpg" alt=""/>
+		<picture class="picture-baner">
+			<source media="(max-width:550px)" srcset="./grafika/mobile/header-mobile.jpg">
+			<img class="img-baner" src="./grafika/header.jpg" alt=""/>
 		</picture>
 		<header class="header-baner tresc float-clearfix">
 			<div class="kol2">
-				<h1>We provide technological solutions for the aerospace industry.</h1>
-				<p class="podtytul">We mainly deal with hard-working materials processing with special processes and unconventional methods as well as CNC production.</p>
+				<h1>Dostarczamy rozwiązania technologiczne dla przemysłu lotniczego.</h1>
+				<p class="podtytul">Zajmujemy się głównie obróbką materiałów trudno-obrabialnych procesami specjalnymi i metodami niekonwencjonalnymi jak również wytwarzaniem CNC.</p>
 			</div>			
 		</header>
 		<section id="o-firmie">
-			<h2>About us</h2>
+			<h2>O firmie</h2>
 			<section class="float-clearfix">
 				<picture class="kol2 animation-box">
-					<source media="(max-width:600px)" srcset="../grafika/mobile/img1-mobile.jpg">
-					<img class="left-slidein delay-cwiercs" src="../grafika/img1.jpg" alt=""/>
+					<source media="(max-width:600px)" srcset="./grafika/mobile/img1-mobile.jpg">
+					<img class="left-slidein delay-cwiercs" src="./grafika/img1.jpg" alt=""/>
 				</picture>
 				<div class="tresc float-clearfix">
 					<div class="kol2 kol-prawa float-clearfix">
-						<h3>Company Salloytech Sp. z o.o. Established in 2014 and operating in the aviation industry.</h3>
-						<p>It deals with processing of mainly hard-working materials such as nickel and titanium superalloys in particular by means of unconventional methods and special processes.</p>
-						<p>Production of parts with strict quality assurance requirements. Study of thermally sprayed coatings. </p>
-						<p>We have a quality management system in accordance with AS9100: 2016 and ISO9001: 2015. Our staff has many years of experience in producing direct parts in special processes.</p>
+						<h3>Spółka Salloytech Sp. z o.o. powstała w 2014 roku i funkcjonuje w branży lotniczej.</h3>
+						<p>Zajmuje się obróbką materiałów głównie trudno-obrabialnych takich jak nadstopy niklu oraz tytan w szczególności metodami niekonwencjonalnymi i procesami specjalnymi.</p>
+						<p>Produkcją części o restrykcyjnych wymaganiach zapewnienia jakości. Badaniem powłok natryskiwanych termicznie.</p>
+						<p>Posiadamy system zarządzania jakością zgodny z AS9100:2016 oraz ISO9001:2015. Nasza kadra posiada wieloletnie doświadczenie w produkcji części bezpośrednich w procesach specjalnych.</p>
 					</div>
 				</div>
 			</section>
@@ -58,66 +58,66 @@
 				<h4 class="kol2 kol-prawa">Nasze główne atuty:</h4>
 				<section class="float-clear float-clearfix">
 					<div class="kol animation-box ">
-						<img class="ikona right-pop" src="../grafika/jakosc.svg" alt="jakość"/>
+						<img class="ikona right-pop" src="./grafika/jakosc.svg" alt="jakość"/>
 					</div>
 					<div class="kol2 kol-prawa">
-						<h5>Quality</h5>
-						<p>We provide Quality Management System in accordance with ISO 9001: 2015 and AS 9100D: 2016 and qualified staff of internal auditors.</p>
+						<h5>Jakość</h5>
+						<p>Zapewniamy System Zarządzania Jakością zgodny z ISO 9001:2015 oraz AS 9100D:2016 oraz wykwalifikowaną kadrę audytorów wewnętrznych.</p>
 					</div>
 				</section>
 				<section class="float-clearfix">
 					<div class="kol animation-box">
-						<img class="ikona right-pop delay-cwiercs" src="../grafika/technologia.svg" alt="technologia"/>
+						<img class="ikona right-pop delay-cwiercs" src="./grafika/technologia.svg" alt="technologia"/>
 					</div>
 					<div class="kol2 kol-prawa">
-						<h5>Technology</h5>
-						<p>We use modern machining, loss and additive methods to ensure optimum price / performance ratio while meeting all requirements.</p>
+						<h5>Technologia</h5>
+						<p>Stosujemy nowoczesne metody obróbkowe, ubytkowe oraz addytywne aby zapewnić optymalny stosunek ceny do jakości przy równoczesnym spełnieniu wszystkich wymagań. </p>
 					</div>
 				</section>
 				<section class="float-clearfix">
 					<div class="kol animation-box">
-						<img class="ikona right-pop delay-pols" src="../grafika/terminowosc.svg" alt="terminowość"/>
+						<img class="ikona right-pop delay-pols" src="./grafika/terminowosc.svg" alt="terminowość"/>
 					</div>
 					<div class="kol2 kol-prawa">
-						<h5>Punctuality</h5>
-						<p>We guarantee fast response times from the design phase to the delivery of material through the Just-in-Time method .</p>
+						<h5>Terminowosć</h5>
+						<p>Gwarantujemy szybki czas działania od fazy projektu do dostawy materiału dzięki metodzie Just-in-Time.</p>
 					</div>
 				</section>
 			</section>
 		</section>
 		<section id="oferta">
-			<h2>Offer</h2>
+			<h2>Oferta</h2>
 			<div class="tresc">
 				<div class="kol2">
-					<p>We offer manufacturing services by loss and additive methods. We have rich machine facilities, qualified staff and experience in the production of special processes. We also use conventional and CNC machining.</p>
-					<strong> We encourage you to submit inquiries.</strong>
+					<p>Oferujemy usługi wytwarzania metodami ubytkowymi oraz addytywnymi. Posiadamy bogate zaplecze maszynowe, wykwalifikowaną kadrę oraz doświadczenie w produkcji procesami specjalnymi. Korzystamy również z obróbek konwencjonalnych oraz CNC. Zachęcamy do składania zapytań ofertowych.</p>
+					<strong>Zachęcamy do zapytań ofertowych.</strong>
 				</div>
 			</div>
 			<picture class="kol2 kol-prawa animation-box">
-				<source media="(max-width:600px)" srcset="../grafika/mobile/img2-mobile.jpg">
-				<img class="right-slidein delay-cwiercs" src="../grafika/img2.jpg" alt=""/>
+				<source media="(max-width:600px)" srcset="./grafika/mobile/img2-mobile.jpg">
+				<img class="right-slidein delay-cwiercs" src="./grafika/img2.jpg" alt=""/>
 			</picture>
 		</section>
 		<section id="galeria" class="tresc float-clear">
-			<h2>Gallery</h2>
-			<p>Products made by us:</p>
+			<h2>Galeria</h2>
+			<p>Wykonane przez nas produkty:</p>
 			<div class="slider">
-				<img class="current-img-slide" src="../grafika/galeria/i-3gZqLh3-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="../grafika/galeria/i-92s4HZf-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="../grafika/galeria/i-ggH3WSC-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="../grafika/galeria/i-HxhJnW4-XL.jpg" alt=""/>
-				<img class="img-slide next-slide" src="../grafika/galeria/i-L7PCD7g-XL.jpg" alt=""/>
+				<img class="current-img-slide" src="./grafika/galeria/i-3gZqLh3-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="./grafika/galeria/i-92s4HZf-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="./grafika/galeria/i-ggH3WSC-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="./grafika/galeria/i-HxhJnW4-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="./grafika/galeria/i-L7PCD7g-XL.jpg" alt=""/>
 				<button class="slider-btn lewy-btn" onclick="previousSlide()">
-					<img src="../grafika/arrow-lewa.svg" alt=""/>
+					<img src="./grafika/arrow-lewa.svg" alt=""/>
 				</button>
 				<button class="slider-btn prawy-btn" onclick="nextSlide()">
-					<img src="../grafika/arrow-prawa.svg" alt=""/>
+					<img src="./grafika/arrow-prawa.svg" alt=""/>
 				</button>
 			</div>
 		</section>
 	</section>
 	<footer id="kontakt" class="float-clearfix">		
-		<h2>Contact</h2>
+		<h2>Kontakt</h2>
 		<div class="tresc float-clearfix">
 			<p>Salloytech Sp. z o.o.</p>
 			<div class="adres kol">
@@ -133,8 +133,17 @@
 		</div>
 	</footer>
 </div>
+<!--[if IE]>
+		<style>
+			@media (max-width:551px) {
+				.img-baner {
+					left:-60%;
+					width:inherit;
+				}
+			}
+		</style>
+	<![endif]-->
 <script>
-	//on load animation
 	var el = document.getElementsByClassName("animation-box")[0];
 	var handler = onVisibilityChange(el, function() {
 		el.children[1].classList.add("base-position");
@@ -214,7 +223,6 @@
 		attachEvent('onscroll', handler5);
 		attachEvent('onresize', handler5);
 	}
-	
 	//smooth scrolling
 	var scroll = new SmoothScroll('a[href*="#"]');
 </script>
