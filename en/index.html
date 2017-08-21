@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,8 +133,17 @@
 		</div>
 	</footer>
 </div>
+<!--[if IE]>
+		<style>
+			@media (max-width:551px) {
+				.img-baner {
+					left:-60%;
+					width:inherit;
+				}
+			}
+		</style>
+	<![endif]-->
 <script>
-	//on load animation
 	var el = document.getElementsByClassName("animation-box")[0];
 	var handler = onVisibilityChange(el, function() {
 		el.children[1].classList.add("base-position");
@@ -151,7 +159,6 @@
 		attachEvent('onscroll', handler);
 		attachEvent('onresize', handler);
 	}
-
 	var el2 = document.getElementsByClassName("animation-box")[1];
 	var handler2 = onVisibilityChange(el2, function() {
 		el2.children[0].classList.add("base-position");
@@ -215,7 +222,6 @@
 		attachEvent('onscroll', handler5);
 		attachEvent('onresize', handler5);
 	}
-	
 	//smooth scrolling
 	var scroll = new SmoothScroll('a[href*="#"]');
 </script>

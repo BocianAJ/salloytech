@@ -19,8 +19,7 @@
 
 /* 0.0 Resetowanie styli */
 	body, main, nav, a, header, h1, h2, h3, h4 ,h5, h6, section, div, p, ul, li, img, footer {
-		-webkit-box-sizing:border-box;
-		        box-sizing:border-box;
+		box-sizing:border-box;
 		padding:0;
 		margin:0;
 		text-decoration:none;
@@ -144,8 +143,7 @@
 		display: block;
 	}
 	.script .blurowanie {
-		-webkit-filter: blur(2px);
-		        filter: blur(2px);
+		filter: blur(2px);
 	}
 		/* 1.2.1 Grid */
 			.kol {
@@ -193,30 +191,24 @@
 		overflow:hidden;
 	}
 	.script .right-slidein {
-		-webkit-animation-name:right-slidein;
-		        animation-name:right-slidein;
-		-webkit-animation-duration:1s;
-		        animation-duration:1s;
+		animation-name:right-slidein;
+		animation-duration:1s;
 		-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
 		animation-play-state: paused;
 		 -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
 		animation-fill-mode: backwards;
 	}
 	.script .left-slidein {
-		-webkit-animation-name:left-slidein;
-		        animation-name:left-slidein;
-		-webkit-animation-duration:1s;
-		        animation-duration:1s;
+		animation-name:left-slidein;
+		animation-duration:1s;
 		-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
 		animation-play-state: paused;
 		 -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
 		animation-fill-mode: backwards;
 	}	
 	.script .right-pop {
-		-webkit-animation-name:right-pop;
-		        animation-name:right-pop;
-		-webkit-animation-duration:1s;
-		        animation-duration:1s;
+		animation-name:right-pop;
+		animation-duration:1s;
 		-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
 		animation-play-state: paused;
 		 -webkit-animation-fill-mode: backwards; /* Safari 4.0 - 8.0 */
@@ -224,35 +216,23 @@
 	}
 	.script .delay-pols {
 		-webkit-animation-delay: 0.6s; /* Safari 4.0 - 8.0 */
-		animation-delay: 0.5s;
+		animation-delay: 0.6s;
 	}
 	.script .delay-cwiercs{
 		-webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
-		animation-delay: 0.25s;
-	}
-	@-webkit-keyframes right-slidein {
-		from {-webkit-transform: translateX(100%);transform: translateX(100%);}
-		to {-webkit-transform: translateX(0);transform: translateX(0);}
+		animation-delay: 0.3s;
 	}
 	@keyframes right-slidein {
-		from {-webkit-transform: translateX(100%);transform: translateX(100%);}
-		to {-webkit-transform: translateX(0);transform: translateX(0);}
-	}
-	@-webkit-keyframes left-slidein {
-		from {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
-		to {-webkit-transform: translateX(0);transform: translateX(0);}
+		from {transform: translateX(100%);}
+		to {transform: translateX(0);}
 	}
 	@keyframes left-slidein {
-		from {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
-		to {-webkit-transform: translateX(0);transform: translateX(0);}
-	}
-	@-webkit-keyframes right-pop {
-		from {-webkit-transform: translateX(-100%);transform: translateX(-100%); opacity:0; padding:3em;}
-		to {-webkit-transform: translateX(0%);transform: translateX(0%); opacity:1; padding:0;}
+		from {transform: translateX(-100%);}
+		to {transform: translateX(0);}
 	}
 	@keyframes right-pop {
-		from {-webkit-transform: translateX(-100%);transform: translateX(-100%); opacity:0; padding:3em;}
-		to {-webkit-transform: translateX(0%);transform: translateX(0%); opacity:1; padding:0;}
+		from {transform: translateX(-100%); opacity:0; padding:3em;}
+		to {transform: translateX(0%); opacity:1; padding:0;}
 	}
 	.script .base-position {
 		-webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
@@ -266,19 +246,12 @@
 		left: 0;
 		right: 0;
 		background-color:rgba(255,255,255, 0.99);
-		-webkit-box-shadow:0 1px 0.25em #888788;
-		        box-shadow:0 1px 0.25em #888788;
+		box-shadow:0 1px 0.25em #888788;
 	}
 	.header-nav .tresc {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.header-nav a.kol {
 		width:auto;
@@ -290,9 +263,7 @@
 	}
 	nav {
 		text-align:right;
-		-webkit-box-ordinal-group: 2;
-		    -ms-flex-order: 1;
-		        order: 1; /* korekta do float-clearfix dla flexa */
+		order: 1; /* korekta do float-clearfix dla flexa */
 	}
 	.tresc nav.kol2 {
 		width:auto;
@@ -319,14 +290,10 @@
 		right:0;
 		margin:0 auto;
 		bottom: -0.2em;
-		-webkit-transition:width 0.5s;
-		-o-transition:width 0.5s;
 		transition:width 0.5s;
 	}
 	nav a:hover:after, nav a:focus:after, nav a:active:after {
 		width:1em;
-		-webkit-transition:width 0.5s;
-		-o-transition:width 0.5s;
 		transition:width 0.5s;
 	}
 		@media (max-width:1400px) { /* By móc umoeścić flagi nad menu*/
@@ -373,9 +340,7 @@
 			}
 			.script .mobile-menu {
 				float: right;
-				-webkit-box-ordinal-group: 2;
-				    -ms-flex-order: 1;
-				        order: 1;
+				order: 1;
 				border: none;
 				background: #fff;		
 			}
@@ -427,8 +392,7 @@
 		height: 2vh;
 		width: auto;
 		margin:2vh 1vh;
-		-webkit-box-shadow: 0 0 1px 1px #efefef;
-		        box-shadow: 0 0 1px 1px #efefef;
+		box-shadow: 0 0 1px 1px #efefef;
 		display: block;
 	}
 	@media (max-width:1400px) {
@@ -456,12 +420,8 @@
 		margin-top:6vh;
 	}
 	.header-baner {
-		display:-webkit-box;
-		display:-ms-flexbox;
 		display:flex;
-		-webkit-box-align:center;
-		    -ms-flex-align:center;
-		        align-items:center;
+		align-items:center;
 		position:relative;
 		top: 2vh;
 		color:#fff;
@@ -481,14 +441,10 @@
 	}
 
 	@media (max-width:551px) {
-		.picture-baner {
-			position:relative;
-			display:block;
-			height:80vw;	
-		}
 		.img-baner {
-			max-width:inherit;
-			width:100%;
+			position:relative;
+			min-height: 80vw;
+			clip: rect(0, 100vw, 80vw, 0);
 		}
 		.header-baner {
 			position:absolute;
@@ -498,12 +454,6 @@
 		}
 		.header-baner .kol2 {
 			width:100%;
-		}		
-	}
-	@media screen and (max-width:551px) and (-ms-high-contrast: active), (-ms-high-contrast: none) { /* IE specific query*/
-		.img-baner {
-			left:-60%;
-			width:inherit;
 		}
 	}
 	@media (max-width:300px) {
@@ -592,11 +542,7 @@
 	.current-img-slide {
 		position: relative;
 		height:auto;
-		-webkit-transition:-webkit-transform 1s;
-		transition:-webkit-transform 1s;
-		-o-transition:transform 1s;
 		transition:transform 1s;
-		transition:transform 1s, -webkit-transform 1s;
 	}
 	.current-img-slide, .img-slide {
 		width:45%;
@@ -625,24 +571,12 @@
 		padding:0 4em;
 	}
 	.script .next-slide {
-		-webkit-transform:translateX(100%);
-		    -ms-transform:translateX(100%);
-		        transform:translateX(100%);
-		-webkit-transition:-webkit-transform 1s;
-		transition:-webkit-transform 1s;
-		-o-transition:transform 1s;
+		transform:translateX(100%);
 		transition:transform 1s;
-		transition:transform 1s, -webkit-transform 1s;
 	}
 	.script .previous-slide{
-		-webkit-transform:translateX(-100%);
-		    -ms-transform:translateX(-100%);
-		        transform:translateX(-100%);
-		-webkit-transition:-webkit-transform 1s;
-		transition:-webkit-transform 1s;
-		-o-transition:transform 1s;
+		transform:translateX(-100%);
 		transition:transform 1s;
-		transition:transform 1s, -webkit-transform 1s;
 	}
 	.slider-btn {
 		 display:none;
@@ -658,14 +592,12 @@
 		background-color:#fff;
 		border-radius: 2em;
 		border:none;
-		-webkit-box-shadow:0 1px 0.15em #888788;
-		        box-shadow:0 1px 0.15em #888788;
+		box-shadow:0 1px 0.15em #888788;
 		bottom:45%;
 		bottom: calc(50% - 2em);
 	}
 	.slider-btn:hover, .slider-btn:focus, .slider-btn:active {
-		-webkit-box-shadow:0 2px 4px #888788;
-		        box-shadow:0 2px 4px #888788;
+		box-shadow:0 2px 4px #888788;
 	}
 	.script .prawy-btn {
 		right:0;
@@ -700,7 +632,7 @@
 		background-image:url("./grafika/logo-znak.svg");
 		background-repeat:no-repeat;
 		background-position:bottom right;
-		background-size: auto 65%;
+		background-size: auto 70%;
 		padding-top:1em;
 		padding-bottom:18vh;
 	}
@@ -773,4 +705,4 @@
 		#kontakt .tresc .kol {
 			width:100%;
 		}
-	}
+}
