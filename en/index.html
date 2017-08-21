@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -219,4 +220,227 @@
 	var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SalloyTech</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Agnieszka Bocian">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="../script.js"></script>
+	<script src="../smooth-scroll.js"></script>
+</head>
+<body onload="activeScript()">
+<div class="tlo-opakowanie">
+	<header class="header-nav">
+		<div class="tresc float-clearfix">
+			<a href="" class="kol"> <img class="mobile-logo logo" src="../grafika/logo-horizontal.svg" alt="SalloyTech logo" /><img src="../grafika/logo.svg" class="logo" alt="SalloyTech logo"/></a>
+			<button class="mobile-menu menu-open" onclick="showMenu()"><img class="hamburger-menu" src="../grafika/mobile-menu.svg" alt="menu mobilne"/></button>
+			<button class="mobile-menu menu-close" onclick="hideMenu()"><img class="hamburger-menu" src="../grafika/menu-close.svg" alt="menu mobilne"/></button>
+			<nav class="kol2 kol-prawa">
+				<a href="#o-firmie" onclick="hideMenu()">About us</a>
+				<a href="#oferta" onclick="hideMenu()">Offer</a>
+				<a href="#galeria" onclick="hideMenu()">Galery</a>
+				<a href="#kontakt" onclick="hideMenu()">Contact</a>
+			</nav>
+			<div class="jezyki">
+				<a href="../index.html" title="polska wersja językowa" onmouseenter="flagaPolskiKolor()" onmouseleave="flagaPolskiSzara()" ontouchstart="flagaPolskiKolor()" ontouchend="flagaPolskiSzara()"><img class="flaga flaga-polska" src="../grafika/flaga-pl-szara.svg" alt="flaga Polski"/></a>
+			</div>
+		</div>
+	</header>
+	<section class="float-clear main">
+		<picture>
+			<source media="(max-width:550px)" srcset="../grafika/mobile/header-mobile.jpg">
+			<img class="img-baner" src="../grafika/header.jpg" alt=""/>
+		</picture>
+		<header class="header-baner tresc float-clearfix">
+			<div class="kol2">
+				<h1>We provide technological solutions for the aerospace industry.</h1>
+				<p class="podtytul">We mainly deal with hard-working materials processing with special processes and unconventional methods as well as CNC production.</p>
+			</div>			
+		</header>
+		<section id="o-firmie">
+			<h2>About us</h2>
+			<section class="float-clearfix">
+				<picture class="kol2 animation-box">
+					<source media="(max-width:600px)" srcset="../grafika/mobile/img1-mobile.jpg">
+					<img class="left-slidein delay-cwiercs" src="../grafika/img1.jpg" alt=""/>
+				</picture>
+				<div class="tresc float-clearfix">
+					<div class="kol2 kol-prawa float-clearfix">
+						<h3>Company Salloytech Sp. z o.o. Established in 2014 and operating in the aviation industry.</h3>
+						<p>It deals with processing of mainly hard-working materials such as nickel and titanium superalloys in particular by means of unconventional methods and special processes.</p>
+						<p>Production of parts with strict quality assurance requirements. Study of thermally sprayed coatings. </p>
+						<p>We have a quality management system in accordance with AS9100: 2016 and ISO9001: 2015. Our staff has many years of experience in producing direct parts in special processes.</p>
+					</div>
+				</div>
+			</section>
+			<section class="atuty tresc float-clearfix">
+				<h4 class="kol2 kol-prawa">Nasze główne atuty:</h4>
+				<section class="float-clear float-clearfix">
+					<div class="kol animation-box ">
+						<img class="ikona right-pop" src="../grafika/jakosc.svg" alt="jakość"/>
+					</div>
+					<div class="kol2 kol-prawa">
+						<h5>Quality</h5>
+						<p>We provide Quality Management System in accordance with ISO 9001: 2015 and AS 9100D: 2016 and qualified staff of internal auditors.</p>
+					</div>
+				</section>
+				<section class="float-clearfix">
+					<div class="kol animation-box">
+						<img class="ikona right-pop delay-cwiercs" src="../grafika/technologia.svg" alt="technologia"/>
+					</div>
+					<div class="kol2 kol-prawa">
+						<h5>Technology</h5>
+						<p>We use modern machining, loss and additive methods to ensure optimum price / performance ratio while meeting all requirements.</p>
+					</div>
+				</section>
+				<section class="float-clearfix">
+					<div class="kol animation-box">
+						<img class="ikona right-pop delay-pols" src="../grafika/terminowosc.svg" alt="terminowość"/>
+					</div>
+					<div class="kol2 kol-prawa">
+						<h5>Punctuality</h5>
+						<p>We guarantee fast response times from the design phase to the delivery of material through the Just-in-Time method .</p>
+					</div>
+				</section>
+			</section>
+		</section>
+		<section id="oferta">
+			<h2>Offer</h2>
+			<div class="tresc">
+				<div class="kol2">
+					<p>We offer manufacturing services by loss and additive methods. We have rich machine facilities, qualified staff and experience in the production of special processes. We also use conventional and CNC machining.</p>
+					<strong> We encourage you to submit inquiries.</strong>
+				</div>
+			</div>
+			<picture class="kol2 kol-prawa animation-box">
+				<source media="(max-width:600px)" srcset="../grafika/mobile/img2-mobile.jpg">
+				<img class="right-slidein delay-cwiercs" src="../grafika/img2.jpg" alt=""/>
+			</picture>
+		</section>
+		<section id="galeria" class="tresc float-clear">
+			<h2>Gallery</h2>
+			<p>Products made by us:</p>
+			<div class="slider">
+				<img class="current-img-slide" src="../grafika/galeria/i-3gZqLh3-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-92s4HZf-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-ggH3WSC-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-HxhJnW4-XL.jpg" alt=""/>
+				<img class="img-slide next-slide" src="../grafika/galeria/i-L7PCD7g-XL.jpg" alt=""/>
+				<button class="slider-btn lewy-btn" onclick="previousSlide()">
+					<img src="../grafika/arrow-lewa.svg" alt=""/>
+				</button>
+				<button class="slider-btn prawy-btn" onclick="nextSlide()">
+					<img src="../grafika/arrow-prawa.svg" alt=""/>
+				</button>
+			</div>
+		</section>
+	</section>
+	<footer id="kontakt" class="float-clearfix">		
+		<h2>Contact</h2>
+		<div class="tresc float-clearfix">
+			<p>Salloytech Sp. z o.o.</p>
+			<div class="adres kol">
+				<p><a href="https://goo.gl/maps/f2BaXFXRBeF2" target="_blank" title="zobacz na mapie">ul. AL. Jana Pawła II 27<br/> 00-867 Warszawa</a></p>
+				<p>NIP: 5272724306</p>
+				<p>KRS: 0000529922</p>
+			</div>
+			<div class="dane-kontakt kol float-clearfix">
+				<p>tel: <a href="tel:+48221004721" target="_blank">+48 22 100 47 21</a></p>
+				<p>fax: <a href="fax:+48221004723" target="_blank">+48 22 100 47 23</a></p>
+				<p>email: <a href="mailto:info@salloytech.com" target="_blank">info@salloytech.com</a></p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script>
+	//on load animation
+	var el = document.getElementsByClassName("animation-box")[0];
+	var handler = onVisibilityChange(el, function() {
+		el.children[1].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+		addEventListener('DOMContentLoaded', handler, false); 
+		addEventListener('load', handler, false);
+		addEventListener('scroll', handler, false); 
+		addEventListener('resize', handler, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler); // IE9+ :(
+		attachEvent('onload', handler);
+		attachEvent('onscroll', handler);
+		attachEvent('onresize', handler);
+	}
+
+	var el2 = document.getElementsByClassName("animation-box")[1];
+	var handler2 = onVisibilityChange(el2, function() {
+		el2.children[0].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler2, false); 
+		addEventListener('load', handler2, false);
+		addEventListener('scroll', handler2, false); 
+		addEventListener('resize', handler2, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler2); // IE9+ :(
+		attachEvent('onload', handler2);
+		attachEvent('onscroll', handler2);
+		attachEvent('onresize', handler2);
+	}
+	
+	var el3 = document.getElementsByClassName("animation-box")[2];
+	var handler3 = onVisibilityChange(el3, function() {
+		el3.children[0].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler3, false); 
+		addEventListener('load', handler3, false);
+		addEventListener('scroll', handler3, false); 
+		addEventListener('resize', handler3, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler3); // IE9+ :(
+		attachEvent('onload', handler3);
+		attachEvent('onscroll', handler3);
+		attachEvent('onresize', handler3);
+	}
+	
+	var el4 = document.getElementsByClassName("animation-box")[3];
+	var handler4 = onVisibilityChange(el4, function() {
+		el4.children[0].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler4, false); 
+		addEventListener('load', handler4, false);
+		addEventListener('scroll', handler4, false); 
+		addEventListener('resize', handler4, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler4); // IE9+ :(
+		attachEvent('onload', handler4);
+		attachEvent('onscroll', handler4);
+		attachEvent('onresize', handler4);
+	}
+	
+	var el5 = document.getElementsByClassName("animation-box")[4];
+	var handler5 = onVisibilityChange(el5, function() {
+		el5.children[1].classList.add("base-position");
+	});
+	if (window.addEventListener) {
+	addEventListener('DOMContentLoaded', handler5, false); 
+		addEventListener('load', handler5, false);
+		addEventListener('scroll', handler5, false); 
+		addEventListener('resize', handler5, false); 
+	} else if (window.attachEvent)  {
+	 attachEvent('onDOMContentLoaded', handler5); // IE9+ :(
+		attachEvent('onload', handler5);
+		attachEvent('onscroll', handler5);
+		attachEvent('onresize', handler5);
+	}
+	
+	//smooth scrolling
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+</body>
+>>>>>>> 6ae1411f3be21514d375955968344098d5ae0e55
 </html>
