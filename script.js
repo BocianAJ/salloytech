@@ -75,24 +75,3 @@ function onVisibilityChange(el, callback) {
         }
     }
 }
-
-//efekt hover dla flag 
-function flagaAngliiKolor() {
-	var flaga = document.getElementsByClassName("flaga-brytyjska")[0];
-	flaga.src = "./grafika/flaga-eng.svg";
-}
-function flagaPolskiKolor() {
-	var flaga = document.getElementsByClassName("flaga-polska")[0];
-	flaga.src = "../grafika/flaga-pl.svg";
-}
-
-function flagaAngliiSzara() {
-	var flaga = document.getElementsByClassName("flaga-brytyjska")[0];
-	flaga.src = "./grafika/flaga-eng-szara.svg";
-}
-function flagaPolskiSzara() {
-	var flaga = document.getElementsByClassName("flaga-polska")[0];
-	flaga.src = "../grafika/flaga-pl-szara.svg";
-}
-
-//smooth scrolling
