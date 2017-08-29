@@ -505,26 +505,26 @@
 		}
 	}
 	/* 4.2 Sekcja "Oferta" */
-	#oferta .kol2 {
+	.sekcja-oferta .kol2 {
 		padding-right:5%;
 	}
-	#oferta .kol-prawa {
+	.sekcja-oferta .kol-prawa {
 		padding:0;
 	}
-	#oferta strong {
+	.sekcja-oferta strong {
 		margin:1em 0;
 		display:inline-block;
 	}
 	@media (max-width:550px) {
-		#oferta .kol2 {
+		.sekcja-oferta .kol2 {
 			padding:0;
 		}
-		#oferta img.kol2 {
+		.sekcja-oferta img.kol2 {
 			padding:5% 2vw 0;
 		}
 	}
 	/* 4.3 Sekcja "Galeria" */
-	#galeria h2 {
+	.sekcja-galeria h2 {
 		padding-left:0;
 		padding-right:0;
 		margin:0;
@@ -628,7 +628,7 @@
 		}
 	}
 /* 5.0 Stopka - Kontakt */
-	#kontakt {
+	.sekcja-kontakt {
 		background-image:url("./grafika/logo-znak.svg");
 		background-repeat:no-repeat;
 		background-position:bottom right;
@@ -636,7 +636,7 @@
 		padding-top:1em;
 		padding-bottom:18vh;
 	}
-	#kontakt p {
+	.sekcja-kontakt p {
 		padding:0.3em 0 0.3em 4em;
 		line-height:1.5em;
 	}
@@ -660,34 +660,34 @@
 		content:url("./grafika/kontakt.svg");
 	}
 	@media (min-height:900px) and (max-width:1100px){
-		#kontakt {
+		.sekcja-kontakt {
 			padding-bottom:14vh;
 		}
 	}
 	@media (max-width:900px) {
-		#kontakt {
+		.sekcja-kontakt {
 			padding-bottom:2em;
 			background-size: auto 60%;
 		}
-		#kontakt .tresc .kol {
+		.sekcja-kontakt .tresc .kol {
 			width:60%;
 			padding-bottom:1em;
 		}
-		#kontakt p {
+		.sekcja-kontakt p {
 			padding-left:5em;
 		}
 	}
 	@media (max-width:500px) {
-		#kontakt {
+		.sekcja-kontakt {
 			padding-bottom: 3em;
 			background-size: 4em auto;
 		}
-		#kontakt .tresc .kol {
+		.sekcja-kontakt .tresc .kol {
 			width:50%;
 		}
 	}
 	@media (max-width:400px) and (min-width:300px), (max-width:200px) {
-		#kontakt p {
+		.sekcja-kontakt p {
 			padding-left: 0;
 		}
 		.adres::before, .dane-kontakt::before {
@@ -697,12 +697,12 @@
 		}
 	}
 	@media (max-width:300px) {
-		#kontakt {
+		.sekcja-kontakt {
 			padding-bottom: 30%;
 			background-position: 50% 100%;
 			background-position-x: 50%;
 		}
-		#kontakt .tresc .kol {
+		.sekcja-kontakt .tresc .kol {
 			width:100%;
 		}
 }
